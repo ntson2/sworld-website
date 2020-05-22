@@ -5,10 +5,11 @@ class MainApp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoading: true,
+            isLoading: false,
             dataSource: {}
         };
     }
+
     async componentDidMount() {
         try {
             const response = await fetch('https://mnlk6yozri.execute-api.us-east-1.amazonaws.com/dev');
@@ -32,13 +33,7 @@ class MainApp extends Component {
         } else {
             return (
                 <div>
-                    {dataSource.Items.map(item => (
-                        <div key={item.CardId}>
-                            <h1>{item.CardId}</h1>
-                            <li>{item.CastingCost}</li>
-                            <li>{item.TextBox}</li>
-                        </div>
-                    ))}
+                    {dataSource}
                 </div>
             );
         }

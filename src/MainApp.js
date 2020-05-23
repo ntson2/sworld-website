@@ -6,13 +6,13 @@ class MainApp extends Component {
         super(props);
         this.state = {
             isLoading: false,
-            dataSource: {}
+            dataSource: "a"
         };
     }
 
     async componentDidMount() {
         try {
-            const response = await fetch('https://mnlk6yozri.execute-api.us-east-1.amazonaws.com/dev');
+            const response = await fetch('https://mnlk6yozri.execute-api.us-east-1.amazonaws.com/dev/backend');
             let responseJson = await response.json();
             this.setState(
                 {
@@ -27,15 +27,12 @@ class MainApp extends Component {
     }
 
     render() {
-        let { dataSource } = this.state;
+        let dataSource = this.state.dataSource;
+
         if (this.state.isLoading) {
             return <div>Loading...</div>;
         } else {
-            return (
-                <div>
-                    {dataSource}
-                </div>
-            );
+            return (<div> {dataSource.greetings} </div>);
         }
     }
 }

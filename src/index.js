@@ -3,10 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import MainApp from './MainApp';
 import * as serviceWorker from './serviceWorker';
+import {AppProvider} from "@shopify/polaris";
 
 ReactDOM.render(
   <React.StrictMode>
+      <AppProvider
+          i18n={{
+              Polaris: {
+                  ResourceList: {
+                      sortingLabel: 'Sort by',
+                      defaultItemSingular: 'item',
+                      defaultItemPlural: 'items',
+                      showing: 'Showing {itemsCount} {resource}',
+                      Item: {
+                          viewItem: 'View details for {itemName}',
+                      },
+                  },
+                  Common: {
+                      checkbox: 'checkbox',
+                  },
+              },
+          }}
+      >
     <MainApp />
+      </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

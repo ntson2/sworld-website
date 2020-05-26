@@ -2,7 +2,6 @@ import React, {Component, useState} from 'react';
 import './App.css';
 import '@shopify/polaris/styles.css';
 import { I18nextProvider } from "react-i18next";
-import i18n from "./i18n";
 import {ChoiceList} from "@shopify/polaris";
 import { useTranslation } from "react-i18next";
 

@@ -1,33 +1,16 @@
 import I18n from "./i18nComponent";
 import React, {useState} from "react";
-import {Layout, MediaCard, Modal, TextContainer} from "@shopify/polaris";
+import {DisplayText, Heading, Layout, MediaCard, Modal, TextContainer} from "@shopify/polaris";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Grid from "@material-ui/core/Grid";
+import TextOverlayImage from "./textOverlayImageComponent";
+import Card from "@material-ui/core/Card";
 
-function OneProductCard(title, image, description, modalChanged) {
-    return <MediaCard
-        portrait
-        title={<I18n text={title}/>}
-        primaryAction={{
-            content: <I18n text="learn_more_text"/>,
-            onAction: modalChanged,
-        }}
-        description={<I18n text={description}/>}
-        popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
-    >
-        <img
-            alt=""
-            width="100%"
-            height="100%"
-            style={{
-                objectFit: 'cover',
-                objectPosition: 'center',
-            }}
-            src={image}
-        />
-    </MediaCard>
+function OneProductCard(title, image, description) {
+    return <Card><TextOverlayImage image={image} content={<I18n text={description}/>}/>
+        <DisplayText size="medium"><I18n text={title}/></DisplayText></Card>
 }
 
 function ServicesOfferedComponent() {
@@ -77,29 +60,28 @@ function ServicesOfferedComponent() {
         </Modal.Section>
     </Modal>
 
-    return <div> {detailModal}
-
-            <Grid container spacing={3}>
-                <Grid item xs={3}>
+    return <div>
+            <Grid container spacing={7}>
+                <Grid item xs={3} spacing={2}>
 
                 {OneProductCard("production_text",
-                    "https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
-                    "production_text", detailProductClicked)}
+                    "https://miro.medium.com/max/4800/1*32h8ts3A-7XNr6A4Js87ng.jpeg",
+                    "production_detail")}
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} spacing={2}>
                     {OneProductCard("partnership_text",
-                    "https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
-                    "partnership_text", detailPartnershipClicked)}
+                    "test-image2.jpg",
+                    "partnership_detail")}
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} spacing={2}>
                     {OneProductCard("international_connection_text",
-                    "https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
-                    "international_connection_text", detailInternationalConnectionClicked)}
+                    "test-image2.jpg",
+                    "international_connection_detail")}
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} spacing={2}>
                     {OneProductCard("events_text",
-                    "https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
-                    "events_text", detailEventsClicked)}
+                    "test-image2.jpg",
+                    "events_detail")}
                 </Grid>
             </Grid>
     </div>

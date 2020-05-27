@@ -41,7 +41,8 @@ function HomePage() {
         />
     </MediaCard>
 
-    const mainPage = <div>{mediaCard} <ServicesOfferedComponent /></div>
+    const logo = <img src={"logos.png"} className="image"/>
+    const mainPage = <div>{mediaCard} <ServicesOfferedComponent /> {logo}</div>
 
     return showreelShowed ? showreel : mainPage;
 }

@@ -41,3 +41,20 @@
   display: inline-block;
 }
 
+.small-padding {
+  padding: 23px 0 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  clear: both;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+}
+
+.floatleft {
+  float: left;
+}

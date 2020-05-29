@@ -4,6 +4,8 @@ import i18n from '../i18n'; // initialized i18next instance
 import ReactPlayer from "react-player";
 import {MediaCard, Modal, TextContainer, VideoThumbnail} from "@shopify/polaris";
 import ServicesOfferedComponent from "../components/servicesOfferedComponent";
+import "../App.css"
+import I18n from "../components/i18nComponent";
 
 function HomePage() {
     const {t, i18n} = useTranslation();
@@ -41,8 +43,23 @@ function HomePage() {
         />
     </MediaCard>
 
+    const aboutUs = <div>
+    <section className="small-padding">
+        <div className="wrapper">
+
+            <h3 className="floatleft">
+                <I18n text={"about_us_title"} />
+            </h3>
+            </div>
+    </section>
+        <div>
+            <I18n text={"about_us_content"}/>
+        </div>
+    </div>
+
+
     const logo = <img src={"logos.png"} className="image"/>
-    const mainPage = <div>{mediaCard} <ServicesOfferedComponent /> {logo}</div>
+    const mainPage = <div>{mediaCard} <ServicesOfferedComponent /> {logo} {aboutUs}</div>
 
     return showreelShowed ? showreel : mainPage;
 }

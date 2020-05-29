@@ -20,7 +20,9 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 international_connection_text: "International Connection",
                 international_connection_detail: "International Connection",
                 events_text: "Events",
-                events_detail: "Events"
+                events_detail: "Events",
+                about_us_title: "About Us",
+                about_us_content: "We are awesome people"
             }
         },
         vn: {
@@ -38,7 +40,9 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 international_connection_text: "Kết Nối Quốc Tế",
                 international_connection_detail: "Kết Nối Quốc Tế",
                 events_text: "Sự Kiện",
-                events_detail: "Sự Kiện"
+                events_detail: "Sự Kiện",
+                about_us_title: "Chúng Tôi Là Ai",
+                about_us_content: "Một đội ngũ tuyệt vời"
             }
         }
     },

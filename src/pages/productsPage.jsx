@@ -7,9 +7,7 @@ function ProductsPage() {
 
     console.log("ProductsPage is using language " + i18n.language);
 
-    return <I18nextProvider i18n={i18n}>
-        {t("introduction")}
-    </I18nextProvider>;
+    return <div/>;
 }
 
 export default ProductsPage;

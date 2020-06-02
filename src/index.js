@@ -11,9 +11,10 @@ import {AppProvider} from "@shopify/polaris";
 import enTranslations from '@shopify/polaris/locales/en.json';
 
 const routing = (
+
     <AppProvider i18n={enTranslations}>
 
-    <Router>
+        <Router>
             <div>
                 <Switch>
                     <Route exact path = "/" component={() => <Redirect to="/home" />}/>
@@ -28,4 +29,4 @@ const routing = (
     </AppProvider>
 );
 
-ReactDOM.render(routing, document.getElementById("root"));
+ReactDOM.render(routing, document.querySelector('#root'));

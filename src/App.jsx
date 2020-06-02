@@ -2,20 +2,24 @@ import HomePage from "./pages/homePage";
 import AboutPage from "./pages/aboutPage";
 import ProductsPage from "./pages/productsPage";
 import ForumPage from "./pages/forumPapge";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import {AppProvider, Card, ChoiceList, Layout, Page} from "@shopify/polaris";
-import ErrorPage from "./components/errorPage";
-import {I18nextProvider, useTranslation} from "react-i18next";
+import {Card} from "@shopify/polaris";
 import ContactPage from "./pages/contactPage";
 import I18n from "./components/i18nComponent";
+import PropTypes from 'prop-types';
 import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Tab from "@material-ui/core/Tab";
 import Paper from "@material-ui/core/Paper";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { makeStyles } from '@material-ui/core/styles';
+import Toolbar from "@material-ui/core/Toolbar";
+import Zoom from "@material-ui/core/Zoom";
+import Fab from "@material-ui/core/Fab";
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Container from "@material-ui/core/Container";
 
 const tabToIdMap = {"home" : 0, "products": 1, "forum": 2, "about": 3, "contact": 4};
 const idToTabMap = ["home", "products", "forum", "about", "contact"];
@@ -25,6 +29,45 @@ const useStyles = makeStyles({
         flexGrow: 1,
     },
 });
+
+const backToTopStyles = makeStyles((theme) => ({
+    root: {
+        position: 'fixed',
+        bottom: theme.spacing(2),
+        right: theme.spacing(2),
+    },
+}));
+
+function ScrollTop(props) {
+    const { children } = props;
+    const classes = backToTopStyles();
+    const trigger = useScrollTrigger();
+
+    const handleClick = (event) => {
+        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
+    return (
+        <Zoom in={trigger}>
+            <div onClick={handleClick} role="presentation" className={classes.root}>
+                {children}
+            </div>
+        </Zoom>
+    );
+}
+
+ScrollTop.propTypes = {
+    children: PropTypes.element.isRequired,
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
+    window: PropTypes.func,
+};
 
 function App(props) {
     const classes = useStyles();
@@ -98,9 +141,19 @@ function App(props) {
 
     return (
         <Card>
+            <Toolbar id="back-to-top-anchor" />
             <Header/>
-            {renderedTab()}
+            <Container>
+                {renderedTab()}
+            </Container>
             <Footer/>
+
+            <ScrollTop {...props}>
+                <Fab color="secondary" size="small" aria-label="scroll back to top">
+                    <svg xmlns="http://www.w3.org/2000/svg" color="#00FFFF" width="40" height="30" viewBox="0 0 24 24">
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+                </Fab>
+            </ScrollTop>
         </Card>
     );
 };

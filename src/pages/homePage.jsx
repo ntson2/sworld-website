@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 import {MediaCard, Modal, TextContainer, VideoThumbnail} from "@shopify/polaris";
 import ServicesOfferedComponent from "../components/servicesOfferedComponent";
 import "../App.css"
-import I18n from "../components/i18nComponent";
+
 
 function HomePage() {
     const {t, i18n} = useTranslation();
@@ -43,19 +43,15 @@ function HomePage() {
         />
     </MediaCard>
 
-    const aboutUs = <div>
-    <section className="small-padding">
-        <div className="wrapper">
-
+    const aboutUs = <div className="firstTitle">
             <h3 className="floatleft">
-                <I18n text={"about_us_title"} />
+                Good news: You are in good hands.
+                <small></small>
             </h3>
-            </div>
-    </section>
-        <div>
-            <I18n text={"about_us_content"}/>
+            <div className="clear"></div>
+
         </div>
-    </div>
+
 
 
     const logo = <img src={"logos.png"} className="image"/>

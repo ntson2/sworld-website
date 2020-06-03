@@ -1,0 +1,16 @@
+// Transition
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+// Breakpoint for media query
+$sw-sm: 640px;
+$sw-md: 960px;
+$sw-ls: 1200px;
+$sw-xl: 1600px;
+
+// Media query

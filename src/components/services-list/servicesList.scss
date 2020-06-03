@@ -1,0 +1,33 @@
+@import '../../../public/scss/variable.scss';
+
+.ServicesList {
+    margin-top: 5rem;
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 7.5rem;
+
+    .sw-service-list-label {
+        font-family: $secondary-font;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 4rem;
+        color: #000000;
+        letter-spacing: -.1rem;
+        margin-bottom: .5rem;
+    }
+
+    .sw-service-list-sub-label {
+        font-family: $primary-font;
+        color: #e9204f;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 2rem;
+    }
+
+    .service-wrapper {
+        padding-top: 3.5rem;
+        display: flex;
+    }
+}

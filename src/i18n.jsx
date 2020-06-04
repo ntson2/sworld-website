@@ -9,7 +9,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
             translations: {
                 home_tab: "Home",
                 products_tab: "Products",
-                forum_tab: "Forum",
+                forum_tab: "Media Community",
                 about_tab: "About",
                 contact_tab: "Contact",
                 learn_more_text: "Learn more",
@@ -22,7 +22,8 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 events_text: "Events",
                 events_detail: "Events",
                 about_us_title: "About Us",
-                about_us_content: "We are awesome people"
+                about_us_content: "We are awesome people",
+                our_partner: 'Our partner'
             }
         },
         vn: {
@@ -42,7 +43,8 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 events_text: "Sự Kiện",
                 events_detail: "Sự Kiện",
                 about_us_title: "Chúng Tôi Là Ai",
-                about_us_content: "Một đội ngũ tuyệt vời"
+                about_us_content: "Một đội ngũ tuyệt vời",
+                our_partner: 'Đối tác'
             }
         }
     },

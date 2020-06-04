@@ -26,19 +26,19 @@ const Header = () =>  {
             </div>
             <div className="sw-nav">
                 <NavLink to="/home" activeClassName="sw-nav-selected">
-                    {<I18n text={"home_tab"}/>}
+                    {<I18n text={"home_tab"} />}
                 </NavLink>
                 <NavLink to="/products" activeClassName="sw-nav-selected">
-                    Products
+                    {<I18n text={"products_tab"} />}
                 </NavLink>
                 <NavLink to="/forum" activeClassName="sw-nav-selected">
-                    Forum
+                    {<I18n text={"forum_tab"} />}
                 </NavLink>
                 <NavLink to="/about" activeClassName="sw-nav-selected">
-                    About us
+                    {<I18n text={"about_tab"} />}
                 </NavLink>
                 <NavLink to="contact" activeClassName="sw-nav-selected">
-                    Contact
+                    {<I18n text={"contact_tab"} />}
                 </NavLink>
             </div>
         </div>

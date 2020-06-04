@@ -49,24 +49,6 @@ function TopBanner() {
         },
     };
 
-    const userMenuMarkup = (
-        <TopBar.UserMenu
-            actions={[
-                {
-                    items: [{content: 'Back to Shopify', icon: ArrowLeftMinor}],
-                },
-                {
-                    items: [{content: 'Community forums'}],
-                },
-            ]}
-            name="Dharma"
-            detail="Jaded Pixel"
-            initials="D"
-            open={isUserMenuOpen}
-            onToggle={toggleIsUserMenuOpen}
-        />
-    );
-
     const searchResultsMarkup = (
         <Card>
             <ActionList

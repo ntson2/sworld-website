@@ -3,12 +3,14 @@ import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
 import * as UTIL from '../../share/util/util';
 import { useScrollHandler } from "../../share/scroll-handler/scroll-handler";
+import TopBanner from "../topBanner";
+import I18n from "../i18nComponent";
 
 const swlogo = process.env.PUBLIC_URL + '/img/transparent.png';
 const logoStyle = UTIL.getBackgroundImgStyle(swlogo);
 
 const Header = () =>  {
-    
+
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
     const scroll = useScrollHandler();
@@ -17,13 +19,14 @@ const Header = () =>  {
 
     return (
         <div className={`Header ${ (isTransparentHeader && scroll) ? 'transparent' : 'visible'} `}>
+            <TopBanner/>
             <div className="sw-logo-wrapper">
                 <div className="sw-logo" style={logoStyle}>
-            </div>
+                </div>
             </div>
             <div className="sw-nav">
                 <NavLink to="/home" activeClassName="sw-nav-selected">
-                    Home
+                    {<I18n text={"home_tab"}/>}
                 </NavLink>
                 <NavLink to="/products" activeClassName="sw-nav-selected">
                     Products

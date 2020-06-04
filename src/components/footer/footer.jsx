@@ -1,5 +1,5 @@
 import React from "react";
-import * as CONSTANTS from '../share/constants/constants';
+import * as CONSTANTS from '../../share/constants/constants';
 import "./footer.scss"
 
 const FooterPage = () => {

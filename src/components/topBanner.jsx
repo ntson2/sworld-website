@@ -10,11 +10,6 @@ function TopBanner() {
     const [isSearchActive, setIsSearchActive] = useState(false);
     const [searchValue, setSearchValue] = useState('');
 
-    const toggleIsUserMenuOpen = useCallback(
-        () => setIsUserMenuOpen((isUserMenuOpen) => !isUserMenuOpen),
-        [],
-    );
-
     const toggleIsSecondaryMenuOpen = useCallback(
         () => setIsSecondaryMenuOpen((isSecondaryMenuOpen) => !isSecondaryMenuOpen),
         [],
@@ -89,6 +84,7 @@ function TopBanner() {
     );
 
     const {i18n} = useTranslation();
+    console.log("Current language is ", i18n.language);
 
     const handleLangChange = event => {
         let newlang = event;

@@ -67,7 +67,7 @@ import I18n from "../../components/i18nComponent";
 //     return showreelShowed ? showreel : mainPage;
 // }
 
-const HomePage = () => {
+const HomePage = (props) => {
     return (
         <div className="HomePage">
             <VideoBackground />

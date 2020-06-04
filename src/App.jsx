@@ -1,7 +1,7 @@
-import React, {useEffect, useState, useStyles} from "react";
+import React from "react";
 import Header from "./components/header/header";
 import Navigation from './share/navigation/navigation';
-import Footer from "./components/footer";
+import Footer from "./components/footer/footer";
 import {AppProvider, Card, ChoiceList, Layout, Page} from "@shopify/polaris";
 import ErrorPage from "./components/errorPage";
 import {I18nextProvider, useTranslation} from "react-i18next";
@@ -16,63 +16,51 @@ import ScrollTopArrow from './share/scroll-handler/scroll-handler';
 import './App.scss';
 import Container from "@material-ui/core/Container";
 import queryString from 'query-string'
-import {useTranslation} from "react-i18next";
-
-const tabToIdMap = {"home" : 0, "products": 1, "forum": 2, "about": 3, "contact": 4};
-const idToTabMap = ["home", "products", "forum", "about", "contact"];
-const allowedLanguages = {"en":true, "vn":true};
-const defaultLanguage = "vn";
-
-const useStyles = makeStyles({
-    root: {
-        flexGrow: 1,
-    },
-});
-
-const backToTopStyles = makeStyles((theme) => ({
-    root: {
-        position: 'fixed',
-        bottom: theme.spacing(2),
-        right: theme.spacing(2),
-    },
-}));
-
-function ScrollTop(props) {
-    const { children } = props;
-    const classes = backToTopStyles();
-    const trigger = useScrollTrigger();
-
-    const handleClick = (event) => {
-        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
-
-        if (anchor) {
-            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    };
->>>>>>> add language query string
+import ScrollTop from "./components/scrollToTop";
 
 const App = () => {
+ //   console.log("property ", props);
+
+    /*
+        // Getting language from query string, eg: s-worldmedia.com/home?language=en
+        console.log(props);
+        const params = queryString.parse(props.location.search);
+        var language = params.language;
+
+        console.log("language is ", language);
+        // Change the language
+        const {i18n} = useTranslation();
+
+        if (!i18n.language) {
+            if (!language || !allowedLanguages[language]) {
+                language = defaultLanguage;
+            }
+            i18n.changeLanguage(language);
+        } else {
+            if (!language || i18n.language != language) {
+                props.history.push({
+                    search: `?language=${i18n.language}`
+                });
+            }
+        }
+    */
     return (
         <div className="App">
+            <Toolbar id="back-to-top-anchor" />
             <Header />
             <Navigation />
             <Footer />
-            <ScrollTopArrow className="scrollToTop" />
+            <ScrollTop>
+                <Fab color="secondary" size="small" aria-label="scroll back to top">
+                    <svg xmlns="http://www.w3.org/2000/svg" color="#00FFFF" width="40" height="30" viewBox="0 0 24 24">
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+                </Fab>
+            </ScrollTop>
         </div>
     )
-}
-
-<<<<<<< HEAD
-=======
-ScrollTop.propTypes = {
-    children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
 };
 
+/*
 function App(props) {
     const classes = useStyles();
 
@@ -187,6 +175,5 @@ function App(props) {
         </Card>
     );
 };
-
->>>>>>> add language query string
+*/
 export default App;

@@ -27,7 +27,7 @@
     opacity: 0.3;
 }
 
-.container:hover .middle {
+.container:hover div {
     opacity: 1;
 }
 

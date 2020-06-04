@@ -60,7 +60,8 @@ function ServicesOfferedComponent() {
         </Modal.Section>
     </Modal>
 
-    return <div>
+    return  <div>
+    <div>
             <Grid container spacing={7}>
                 <Grid item xs={3} spacing={2}>
 
@@ -84,7 +85,7 @@ function ServicesOfferedComponent() {
                     "events_detail")}
                 </Grid>
             </Grid>
-    </div>
+    </div></div>
 }
 
 export default ServicesOfferedComponent;

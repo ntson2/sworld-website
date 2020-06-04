@@ -1,23 +1,13 @@
 import React from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
+import * as UTIL from '../../share/util/util';
 import { useScrollHandler } from "../../share/scroll-handler/scroll-handler";
 
 const swlogo = process.env.PUBLIC_URL + '/img/transparent.png';
-const logoStyle = {  
-    backgroundImage: `url(${swlogo})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-}
-
-// import TopBanner from "./topBanner";
+const logoStyle = UTIL.getBackgroundImgStyle(swlogo);
 
 const Header = () =>  {
-    // return     <div>
-    //     <TopBanner/>
-    //     <heading>S-WORLD Multimedia</heading>
-    // </div>
     
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';

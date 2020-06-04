@@ -14,8 +14,8 @@ const Service = (props) => {
                     </div>
                 </div>
                 <div className="sw-service-content-wrapper">
-                    <div className="sw-service-name">{listData.name}</div>
-                    <div className="sw-service-decs">{listData.decs}</div>
+                    <div className="sw-service-name">{listData._name}</div>
+                    {listData._decs.map(dec => <div className="sw-service-decs">{dec}</div>)}
                     <div className="sw-service-arrow">==></div>
                 </div>
             </div>

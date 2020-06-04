@@ -1,6 +1,7 @@
 import React, {Component, useState} from "react";
 import VideoBackground from '../../components/video-background/videoBackground';
 import ServicesList from "../../components/services-list/services-list";
+import ClientList from '../../components/client-list/clientList';
 import '../home/homePage.scss';
 import {I18nextProvider, useTranslation} from "react-i18next";
 import i18n from '../../i18n'; // initialized i18next instance
@@ -71,6 +72,7 @@ const HomePage = () => {
         <div className="HomePage">
             <VideoBackground />
             <ServicesList />
+            <ClientList />
         </div>
     )
 }

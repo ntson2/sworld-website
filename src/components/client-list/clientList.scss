@@ -1,14 +1,16 @@
 @import '../../../public/scss/variable.scss';
+@import '../../../public/scss/mixins.scss';
 
-.ServicesList {
+.ClientList {
     position: relative;
     margin-top: 5rem;
     width: 92%;
     min-height: 50rem;
+    height: auto;
     margin: 0 auto;
     padding-top: 14rem;
 
-    .sw-service-list-label {
+    .sw-client-list-label {
         font-family: $secondary-font;
         font-size: 4rem;
         font-weight: 700;
@@ -18,7 +20,7 @@
         margin-bottom: .5rem;
     }
 
-    .sw-service-list-sub-label {
+    .sw-client-list-sub-label {
         font-family: $primary-font;
         color: #e9204f;
         font-size: 1.7rem;
@@ -28,8 +30,22 @@
         letter-spacing: -.1rem;
     }
 
-    .service-wrapper {
-        padding-top: 3.5rem;
+    .sw-client-list {
+        margin: 5rem auto;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-around;
+        justify-items: center;
+        width: 100%;
+
+        .sw-client {
+            height: 14rem;
+            width: 25%;
+            margin: 2rem;
+            border: 1px solid $fresh-red;
+        }
     }
 }

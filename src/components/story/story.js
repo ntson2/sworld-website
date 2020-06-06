@@ -35,7 +35,10 @@ const Story = () => {
                         <br />
                         Đó là dáng hình Việt Nam - một trong những quốc gia hiếm hoi được trải mình trên 1 ký tự Latin duyên dáng.
                         Được biển Đông rộng lớn - một dòng mạch của Thái Bình Dương bao la, ôm trọn và bao bọc.
-                        S - Việt tuy nhỏ nhắn, nhưng ấn tượng trên bản đồ thế giới, đã gieo trong trái tim mỗi người dân Việt niềm tự tôn dân tộc...
+                        S - Việt tuy nhỏ nhắn, nhưng ấn tượng trên bản đồ thế giới, đã gieo trong trái tim mỗi người dân Việt niềm tự tôn dân tộc
+                        <br />
+                        Chữ S còn là thanh âm của những ý nghĩa thiêng liêng mà vô cùng gần gũi: 
+                        của biểu tượng hoa Sen, của hòn ngọc viễn đông "Sài Gòn"
                         <div className="sw-quotes-logo-bttom" style={bottomQuotesStyle}></div>
                     </div>
                     <div className="sw-read-more-btn">Read more </div>

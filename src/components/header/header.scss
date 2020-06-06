@@ -28,7 +28,7 @@
     }
     
     .sw-nav {
-        width: 70%;
+        width: 60%;
         a {
             font-family: $header-font;
             color: #000000;
@@ -64,6 +64,25 @@
             &:after {
                 width: 100%;
                 opacity: 1;
+            }
+        }
+    }
+
+    .sw-switch-lg {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        width: 10%;
+        flex-wrap: nowrap;
+        margin-left: 2rem;
+
+        span {
+            margin: 0 1rem;
+
+            &:first-child {
+                color: $fresh-red;
             }
         }
     }

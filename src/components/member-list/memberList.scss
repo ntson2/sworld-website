@@ -1,0 +1,63 @@
+@import '../../../public/scss/variable.scss';
+
+.MemberList {
+    position: relative;
+    margin-top: 25rem;
+    width: 100%;
+    min-height: 50rem;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 14rem;
+
+    .sw-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        width: 92%;
+        margin: 0 auto;
+
+        .sw-label-wrapper {
+            width: 20%;
+            .sw-member-list-label {
+                text-align: left;
+                font-family: $secondary-font;
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 4rem;
+                color: #000000;
+                letter-spacing: -.1rem;
+                margin-bottom: .5rem;
+            }
+        
+            .sw-member-list-sub-label {
+                font-family: $primary-font;
+                color: $fresh-red;
+                font-size: 1.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 2rem;
+                letter-spacing: -.1rem;
+            }
+        }
+
+        .sw-devider {
+            width: 80%;
+            border-bottom: 3px solid $fresh-red;
+        }
+
+    }
+
+    .sw-second-list {
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        justify-items: center; 
+    }
+}

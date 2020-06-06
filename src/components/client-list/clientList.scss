@@ -4,48 +4,63 @@
 .ClientList {
     position: relative;
     margin-top: 5rem;
-    width: 92%;
+    width: 100%;
     min-height: 50rem;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 14rem;
+    margin-top: 25rem;
+    padding: 8rem 0;
+    box-shadow: inset 0 0 0 2000px rgba(66, 66, 66, 0.3);
 
-    .sw-client-list-label {
-        font-family: $secondary-font;
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 4rem;
-        color: #000000;
-        letter-spacing: -.1rem;
-        margin-bottom: .5rem;
+    .sw-label-wrapper {
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: flex-end;
+        padding-right: 10rem;
+        margin: .5rem 0;
+
+        .sw-main-label {
+            font-family: $secondary-font;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 4rem;
+            color: #ffffff;
+            letter-spacing: -.1rem;
+            color: $fresh-red;
+
+            &:before {
+                position: absolute;
+                height: 6rem;
+                width: .3rem;
+                content: "";
+                background: $fresh-red;
+                left: 50%;
+                top: -15rem;
+            }
+        }
+        
+        .sw-sub-label {
+            font-family: $primary-font;
+            color: #ffffff;
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 2rem;
+            letter-spacing: -.1rem;
+            margin-bottom: 5rem;
+        }
     }
-
-    .sw-client-list-sub-label {
-        font-family: $primary-font;
-        color: #e9204f;
-        font-size: 1.7rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 2rem;
-        letter-spacing: -.1rem;
-    }
-
+    
     .sw-client-list {
         margin: 5rem auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        align-content: space-around;
-        justify-items: center;
-        width: 100%;
+        width: 90%;
+        // border-left: 2rem solid $fresh-red;
+        // border-right: 2rem solid $fresh-red;
 
-        .sw-client {
-            height: 14rem;
-            width: 25%;
-            margin: 2rem;
-            border: 1px solid $fresh-red;
+        .sw-client-logo {
+            
         }
     }
 }

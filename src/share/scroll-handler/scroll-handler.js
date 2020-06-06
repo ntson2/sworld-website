@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
 import { red } from '@material-ui/core/colors';
+import zIndex from '@material-ui/core/styles/zIndex';
 
 export const useScrollHandler = () => {
     const [scroll, setScroll] = useState(1)
 
     useEffect(() => {
         const onScroll = () => {
-            const scrollCheck = window.scrollY < 100
+            const scrollCheck = window.scrollY < 700
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
             }
@@ -25,7 +26,6 @@ const ScrollTopArrow = () => {
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    const reachToFooter = window.pageYOffset >= document.body.scrollHeight - window.innerHeight - 500;
 
     if (!showScroll && window.pageYOffset > 400){
       setShowScroll(true)
@@ -47,7 +47,8 @@ const ScrollTopArrow = () => {
       position: 'fixed',
       bottom: 30,
       right: 30,
-      opacity: 0.5,
+      opacity: 0.9,
+      zIndex: 10,
       color: '#e9204f',
       '&:hover': {
           opacity: 1

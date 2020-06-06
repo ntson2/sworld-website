@@ -8,6 +8,23 @@
     margin: 0 auto;
     padding-top: 14rem;
 
+    &:before {
+        position: absolute;
+        height: 6rem;
+        width: .3rem;
+        content: "";
+        background: $fresh-red;
+        left: 50%;
+        top: .1rem;
+    }
+
+    .sw-devider {
+        margin: 1rem 0;
+        padding: .2rem 0;
+        border-top: .3rem solid $fresh-red;
+        width: 6%;
+    }
+
     .sw-service-list-label {
         font-family: $secondary-font;
         font-size: 4rem;

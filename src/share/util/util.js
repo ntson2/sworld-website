@@ -1,8 +1,10 @@
-export const getBackgroundImgStyle = (src, alt = false) => {
+export const getBackgroundImgStyle = (src, listOtherStyle = {}, isContain = false) => {
     return {  
         backgroundImage: `url(${src})`,
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundSize: isContain ? 'contain' : 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: listOtherStyle.width,
+        height: listOtherStyle.height
     }
 }

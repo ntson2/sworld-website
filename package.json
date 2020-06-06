@@ -24,7 +24,10 @@
     "react-player": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-sticky-footer": "0.1.0-rc3"
+    "react-slick": "^0.26.1",
+    "react-sticky-footer": "0.1.0-rc3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

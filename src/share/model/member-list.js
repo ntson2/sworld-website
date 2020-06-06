@@ -17,7 +17,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `sw_founder_decs`
+        _decs: ``
     },
     {
         _name: `FREDDY GENTIZON`,
@@ -27,10 +27,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
     {
         _name: `VY LÊ`,
@@ -50,10 +47,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
     {
         _name: `NGUYỄN QUỐC HÙNG`,
@@ -63,10 +57,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
     {
         _name: `GS. PHAN VĂN TRƯỜNG`,
@@ -76,10 +67,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
 
     {
@@ -90,10 +78,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
     {
         _name: `Don Le`,
@@ -103,10 +88,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
 ];
 

@@ -1,20 +1,42 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
 import * as UTIL from '../../share/util/util';
 import { useScrollHandler } from "../../share/scroll-handler/scroll-handler";
-import TopBanner from "../topBanner";
+import { useTranslation } from 'react-i18next';
 import I18n from "../i18nComponent";
+import * as CONSTANT from '../../share/constants/constants';
 
 const swlogo = process.env.PUBLIC_URL + '/img/transparent.png';
 const logoStyle = UTIL.getBackgroundImgStyle(swlogo);
+const swLeftIcon = process.env.PUBLIC_URL + '/icon/left.svg';
+const swRightIcon = process.env.PUBLIC_URL + '/icon/right.svg';
 
 const Header = () =>  {
-
-    const [curentlg, setLanguage] = useState('EN')
+    let swIconStyle;
+    const { t, i18n } = useTranslation('en');
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
     const scroll = useScrollHandler();
+    const currentLng = i18n.language;
+
+    // Initial active language
+    if (currentLng === CONSTANT.SW_LANGUAGE.VN) {
+        swIconStyle = UTIL.getBackgroundImgStyle(swRightIcon, {width: '3rem', height: '3rem'}, false);
+    } else {
+        swIconStyle = UTIL.getBackgroundImgStyle(swLeftIcon, {width: '3rem', height: '3rem'}, false);
+    }
+
+    // On change language
+    const onSwitchLanguage = () => {
+        if (currentLng === CONSTANT.SW_LANGUAGE.EN) {
+            i18n.changeLanguage(CONSTANT.SW_LANGUAGE.VN);
+            swIconStyle = UTIL.getBackgroundImgStyle(swRightIcon, {width: '3rem', height: '3rem'}, false);
+        } else {
+            i18n.changeLanguage(CONSTANT.SW_LANGUAGE.EN);
+            swIconStyle = UTIL.getBackgroundImgStyle(swLeftIcon, {width: '3rem', height: '3rem'}, false);   
+        }
+    };
 
     return (
         <div className={`Header ${ (isTransparentHeader && scroll) ? 'transparent' : 'visible'} `}>
@@ -40,8 +62,9 @@ const Header = () =>  {
                 </NavLink>
             </div>
             <div className="sw-switch-lg">
-                <span>{curentlg}</span>
-                <span className="sw-dropdown"></span>
+                <span>EN</span>
+                <div onClick={onSwitchLanguage} className="sw-icon" style={swIconStyle}></div>
+                <span>VN</span>
             </div>
         </div>
     )

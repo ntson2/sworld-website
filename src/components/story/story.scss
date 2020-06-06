@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,275;1,400;1,700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
 .Story {
+    margin: 10rem 0 20rem 0;
+
     .sw-label-wrapper {
         margin-top: 10rem;
         display: flex;
@@ -10,8 +12,9 @@
         justify-items: center;
         align-items: center;
         flex-direction: column;
-
+        
         .sw-main-label {
+            position: relative;
             font-family: $secondary-font;
             font-size: 4rem;
             font-weight: 700;
@@ -19,6 +22,26 @@
             color: #000000;
             letter-spacing: -.1rem;
             margin-bottom: .5rem;
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 25rem;
+                top: 25px;
+                left: -300px;
+                background: $fresh-red;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 25rem;
+                top: 25px;
+                right: -300px;
+                background: $fresh-red;
+            }
         }
 
         .sw-sub-label {
@@ -106,14 +129,14 @@
 
                 .sw-quotes-logo-top {
                     position: absolute;
-                    top: -3rem;
-                    left: -2.5rem;
+                    top: -2rem;
+                    left: -3.5rem;
                 }
 
                 .sw-quotes-logo-bttom {
                     position: absolute;
-                    bottom: -2rem;
-                    right: -2.5rem;
+                    bottom: -1rem;
+                    right: -1.1rem;
                 }
             }
         }

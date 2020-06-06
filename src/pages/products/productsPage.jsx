@@ -7,7 +7,6 @@ const ProductsPage = () => {
 
     return (
         <div className="ProductsPage">
-            <MemberList />
         </div>
     )
 }

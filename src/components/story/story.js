@@ -24,9 +24,6 @@ const Story = () => {
                 </div>
             </div>
             <div className="sw-story-container">
-                <div className="sw-bg-container">
-                    <div className="sw-team-img" style={teamImgStyle}></div>
-                </div>
                 <div className="sw-story-quotes">
                     <div className="quotes">
                         <div className="sw-quotes-logo-top" style={topQuotesStyle}></div>
@@ -42,6 +39,9 @@ const Story = () => {
                         <div className="sw-quotes-logo-bttom" style={bottomQuotesStyle}></div>
                     </div>
                     <div className="sw-read-more-btn">Read more </div>
+                </div>
+                <div className="sw-bg-container">
+                    <div className="sw-team-img" style={teamImgStyle}></div>
                 </div>
             </div>
         </div>

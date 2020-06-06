@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../service/service.scss';
 import * as UTIL from '../../share/util/util';
+import I18n from '../i18nComponent';
 
 const swArrow = process.env.PUBLIC_URL + '/icon/sw-next-white.svg';
 
@@ -37,8 +38,8 @@ const Service = (props) => {
                     ></div>
                 </div>
                 <div className="sw-service-content-wrapper">
-                    <div className="sw-service-name">{listData._name}</div>
-                    {listData._decs.map(dec => <div className="sw-service-decs">{dec}</div>)}
+                    <div className="sw-service-name"><I18n text={listData._name}/></div>
+                    {listData._decs.map(dec => <div className="sw-service-decs"><I18n text={dec}/></div>)}
                     <div className="sw-service-arrow" style={arrowStyle}></div>
                 </div>
             </div>

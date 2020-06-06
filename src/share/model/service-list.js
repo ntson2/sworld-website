@@ -10,33 +10,38 @@ const eventRed = process.env.PUBLIC_URL + '/icon/sw-event-red.svg';
 
 const ServicesList = [
     {
-        _name: 'Produce',
+        _name: 'sw_service_production',
         _decs: [
-            `Liên kết với báo điện tử nhằm thực hiện các format mới`,   
-            `Xây dựng đa kênh trên các nền tảng đa phương tiện`
+            `sw_service_production_detail_1`,   
+            `sw_service_production_detail_2`,
+            `sw_service_production_detail_3`,
         ],
         _icon: [produceIconRed, produceIconWhite],
     },
     {
-        _name: 'Connective and Release',
+        _name: 'sw_service_production_detail_header',
         _decs: [
-            `Hợp tác sản xuất và phát hành các sản phẩm truyền hình`,
-            `Hợp tác sản xuất và phát hành các sản phẩm báo chí`,
-            `Phát hành đa nền tảng`
+            `sw_service_connect_and_publishing_detail_1`,
+            `sw_service_connect_and_publishing_detail_2`,
+            `sw_service_connect_and_publishing_detail_3`
         ],
         _icon: [publishingRed, publishingWhite],
     },
     {
-        _name: 'International Connection',
+        _name: 'sw_service_international_connect',
         _decs: [
-            `Kết nối các công ty, đơn vị, cá nhân nước ngoài muốn đến Việt Nam đầu tư, khám phá, tổ chức sự kiện`
+            `sw_service_international_connect_detail_1`,
+            `sw_service_international_connect_detail_2`
         ],
         _icon: [connectRed, connectWhite]
     },
     {
-        _name: 'Event',
+        _name: 'sw_service_event',
         _decs: [
-            `Kết nối các công ty, đơn vị, cá nhân nước ngoài muốn đến Việt Nam đầu tư, khám phá, tổ chức sự kiện`
+            `sw_service_event_detail_1`,
+            `sw_service_event_detail_2`,
+            `sw_service_event_detail_3`,
+            `sw_service_event_detail_4`
         ],
         _icon: [eventRed, eventWhite]
     }

@@ -79,9 +79,7 @@
             height: 50px;
             display: inline-block;
             border-radius: 50%;
-            border: 1px solid -webkit-gradient(linear, left top, right top, from(#3e2bce), color-stop(100%, #2dd3aa), color-stop(100%, #2dd3aa), to(#2dd3aa));
-            border: 1px solid -o-linear-gradient(left, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
-            border: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+            border: 1px solid #2dd3aa;
             background: #cbd3df;
             color: #fff;
             padding-top: 13px;
@@ -91,7 +89,7 @@
             i {
                 background: transparent;
                 position: absolute;
-                bottom: -4px;
+                top: -4px;
                 right: -4px;
             }
 
@@ -139,7 +137,7 @@
 
         p {
             display: block;
-            padding-top: 25px;
+            padding-top: 30px;
             margin-bottom: 0;
         }
 

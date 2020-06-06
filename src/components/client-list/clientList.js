@@ -35,7 +35,12 @@ const SamplePrevArrow = (props) => {
   );
 }
 
+const teamImg = process.env.PUBLIC_URL + '/img/sw-team.jpg';
+const imgTeamStyle = UTIL.getBackgroundImgStyle(teamImg);
+
 const sliderSetting = {
+
+    dots: true,
     infinite: true,
     autoplay: false,
     speed: 2000,
@@ -125,9 +130,11 @@ const SliderWrap = styled.div`
 
 const ClientList = () => {
     return (
-        <div className="ClientList">
-            <div className="sw-client-list-label"><I18n text={"our_partner"}/></div>
-            <div className="sw-client-list-sub-label">From all over the world</div>
+        <div className="ClientList" style={imgTeamStyle}>
+            <div className="sw-label-wrapper">
+                <div className="sw-main-label"><I18n text={"our_partner"}/></div>
+                <div className="sw-sub-label">From all over the world</div>
+            </div>
                 <div className="sw-client-list">
                     <SliderWrap>
                         <Slider {...sliderSetting}>

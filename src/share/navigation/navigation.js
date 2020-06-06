@@ -57,6 +57,7 @@ function PageList(props) {
 const Navigation = () => {
     return (
         <Switch>
+            <Route exact path = "/" component={() => <Redirect to="/home" />}/>
             <Route path = "/home" component={(props) => <PageList location={props.location} history={props.history} pageName="home"/>}  />
             <Route path = "/products" component={(props) => <PageList location={props.location} history={props.history} pageName="products"/>}  />
             <Route path = "/forum" component={(props) => <PageList location={props.location} history={props.history} pageName="forum"/>}  />

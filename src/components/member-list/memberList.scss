@@ -2,8 +2,8 @@
 
 .MemberList {
     position: relative;
-    margin-top: 5rem;
-    width: 92%;
+    margin-top: 25rem;
+    width: 100%;
     min-height: 50rem;
     height: auto;
     margin: 0 auto;
@@ -15,9 +15,11 @@
         align-content: center;
         justify-content: flex-start;
         align-items: center;
+        width: 92%;
+        margin: 0 auto;
 
         .sw-label-wrapper {
-            width: 70%;
+            width: 20%;
             .sw-member-list-label {
                 text-align: left;
                 font-family: $secondary-font;
@@ -31,7 +33,7 @@
         
             .sw-member-list-sub-label {
                 font-family: $primary-font;
-                color: #000000;
+                color: $fresh-red;
                 font-size: 1.7rem;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -40,36 +42,22 @@
             }
         }
 
+        .sw-devider {
+            width: 80%;
+            border-bottom: 3px solid $fresh-red;
+        }
+
     }
 
-    .sw-members {
-        margin-top: 10rem;
+    .sw-second-list {
+        width: 92%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap ;
         justify-content: space-between;
         align-items: center;
         align-content: space-between;
-        justify-items: center;
-        
+        justify-items: center; 
     }
-
-    // @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    //     .sw-members {
-    //         text-align: center;
-    //     }
-    // }
-
-    // @media only screen and (min-width: 768px) and (max-width: 991px) {
-    //     .sw-members {
-    //         text-align: center;
-    //     }
-    // }
-
-    // @media only screen and (max-width: 767px) {
-    //     .sw-members {
-    //         margin: 0;
-    //         padding: 0 15px;
-    //     }
-    // }
 }

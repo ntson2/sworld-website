@@ -10,7 +10,8 @@ const servicesList = serviceList;
 const ServicesList = () => {
     return (
         <div className="ServicesList">
-            <div className="sw-service-list-label"><I18n text={"products_tab"}/></div>
+            <div className="sw-devider"></div>
+            <div className="sw-service-list-label"><I18n text={"our_services"}/></div>
             <div className="sw-service-list-sub-label">We work with you. Not for you</div>
                 <div className="service-wrapper">
                     {servicesList.map(item => <Service listData = { item }/>)}

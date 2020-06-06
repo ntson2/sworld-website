@@ -1,0 +1,75 @@
+@import '../../../public/scss/variable.scss';
+
+.MemberList {
+    position: relative;
+    margin-top: 5rem;
+    width: 92%;
+    min-height: 50rem;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 14rem;
+
+    .sw-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+
+        .sw-label-wrapper {
+            width: 70%;
+            .sw-member-list-label {
+                text-align: left;
+                font-family: $secondary-font;
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 4rem;
+                color: #000000;
+                letter-spacing: -.1rem;
+                margin-bottom: .5rem;
+            }
+        
+            .sw-member-list-sub-label {
+                font-family: $primary-font;
+                color: #000000;
+                font-size: 1.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 2rem;
+                letter-spacing: -.1rem;
+            }
+        }
+
+    }
+
+    .sw-members {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        justify-items: center;
+        
+    }
+
+    // @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    //     .sw-members {
+    //         text-align: center;
+    //     }
+    // }
+
+    // @media only screen and (min-width: 768px) and (max-width: 991px) {
+    //     .sw-members {
+    //         text-align: center;
+    //     }
+    // }
+
+    // @media only screen and (max-width: 767px) {
+    //     .sw-members {
+    //         margin: 0;
+    //         padding: 0 15px;
+    //     }
+    // }
+}

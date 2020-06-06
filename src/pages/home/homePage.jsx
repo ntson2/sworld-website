@@ -9,6 +9,8 @@ import ReactPlayer from "react-player";
 import {MediaCard, Modal, TextContainer, VideoThumbnail} from "@shopify/polaris";
 import ServicesOfferedComponent from "../../components/servicesOfferedComponent";
 import I18n from "../../components/i18nComponent";
+import MemberList from "../../components/member-list/memberList";
+import Story from "../../components/story/story";
 
 // function HomePage() {
 //     const {t, i18n} = useTranslation();
@@ -73,6 +75,8 @@ const HomePage = (props) => {
             <VideoBackground />
             <ServicesList />
             <ClientList />
+            <MemberList />
+            <Story />
         </div>
     )
 }

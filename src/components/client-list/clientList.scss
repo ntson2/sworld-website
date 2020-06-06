@@ -6,10 +6,9 @@
     margin-top: 5rem;
     width: 92%;
     min-height: 50rem;
-    height: auto;
     margin: 0 auto;
     padding-top: 14rem;
-
+    
     .sw-client-list-label {
         font-family: $secondary-font;
         font-size: 4rem;
@@ -19,33 +18,28 @@
         letter-spacing: -.1rem;
         margin-bottom: .5rem;
     }
-
+    
     .sw-client-list-sub-label {
         font-family: $primary-font;
-        color: #e9204f;
+        color: $fresh-red;
         font-size: 1.7rem;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 2rem;
         letter-spacing: -.1rem;
+        margin-bottom: 8rem;
     }
-
+    
     .sw-client-list {
+        border-top: 1px solid $fresh-red;
+        border-bottom: 1px solid $fresh-red;
         margin: 5rem auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        align-content: space-around;
-        justify-items: center;
-        width: 100%;
+        width: 90%;
+        // border-left: 2rem solid $fresh-red;
+        // border-right: 2rem solid $fresh-red;
 
-        .sw-client {
-            height: 14rem;
-            width: 25%;
-            margin: 2rem;
-            border: 1px solid $fresh-red;
+        .sw-client-logo {
+            
         }
     }
 }

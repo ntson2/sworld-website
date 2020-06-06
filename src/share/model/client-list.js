@@ -3,7 +3,7 @@ const htvLogo = process.env.PUBLIC_URL + '/img/sw_logo_htv.png';
 const forbesLogo = process.env.PUBLIC_URL + '/img/sw_logo_forbes.jpg';
 const vnexpressLogo = process.env.PUBLIC_URL + '/img/sw_logo_vnexpress.png';
 const zingLogo = process.env.PUBLIC_URL + '/img/sw_logo_zing.png';
-const vtvLogo = process.env.PUBLIC_URL + '/img/vtv.jpg';
+const vtvLogo = process.env.PUBLIC_URL + '/img/sw_logo_vtv.jpg';
 const vovLogo = process.env.PUBLIC_URL + '/img/sw_logo_vov.png';
 const logigearLogo = process.env.PUBLIC_URL + '/img/sw_logo_logigear.jpg';
 

@@ -1,0 +1,121 @@
+@import '../../../public/scss/variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,275;1,400;1,700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+.Story {
+    .sw-label-wrapper {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+
+        .sw-main-label {
+            font-family: $secondary-font;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 4rem;
+            color: #000000;
+            letter-spacing: -.1rem;
+            margin-bottom: .5rem;
+        }
+
+        .sw-sub-label {
+            font-family: $primary-font;
+            color: $fresh-red;
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 2rem;
+            letter-spacing: -.1rem;
+            margin-bottom: 8rem;
+        }
+    }
+
+    .sw-story-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .sw-bg-container {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .sw-team-img {
+                display: flex;
+                align-items: center;
+                width: 90%;
+                margin: auto;
+                max-width: 60rem;
+                position: relative;
+                padding: 30% 2em;
+                box-sizing: border-box;
+            }
+        }
+
+        .sw-story-quotes {
+            
+            display: flex;
+            padding: 0 4rem;
+            height: 100%;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+
+            .sw-read-more-btn {
+                font-family: 'Josefin Sans', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35%;
+                height: 4.5rem;
+                border: 1px solid #2dd3aa;
+                margin-top: 6rem;
+                margin-right: 2rem;
+                font-size: 1.8rem;
+                align-self: flex-start;
+                position: relative;
+                padding: 15px 30px;
+                font-weight: 500;
+                line-height: 16px;
+                border-radius: 50px;
+                min-width: 170px;
+                text-align: center;
+                border: 2px solid #7ad4cc;
+                cursor: pointer;
+
+                &:hover {
+                    background: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+                    border: none;
+                }
+            }
+
+            .quotes {
+                position: relative;
+                font-size: 1.8rem;
+                color: #000000;
+                font-weight: 400;
+                font-family: 'Josefin Sans', sans-serif;
+
+                .sw-quotes-logo-top {
+                    position: absolute;
+                    top: -3rem;
+                    left: -2.5rem;
+                }
+
+                .sw-quotes-logo-bttom {
+                    position: absolute;
+                    bottom: -2rem;
+                    right: -2.5rem;
+                }
+            }
+        }
+    }
+}

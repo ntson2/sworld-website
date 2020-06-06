@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
 import * as UTIL from '../../share/util/util';
@@ -11,15 +11,13 @@ const logoStyle = UTIL.getBackgroundImgStyle(swlogo);
 
 const Header = () =>  {
 
+    const [curentlg, setLanguage] = useState('EN')
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
     const scroll = useScrollHandler();
 
-    console.log(scroll);
-
     return (
         <div className={`Header ${ (isTransparentHeader && scroll) ? 'transparent' : 'visible'} `}>
-            <TopBanner/>
             <div className="sw-logo-wrapper">
                 <div className="sw-logo" style={logoStyle}>
                 </div>
@@ -40,6 +38,10 @@ const Header = () =>  {
                 <NavLink to="contact" activeClassName="sw-nav-selected">
                     {<I18n text={"contact_tab"} />}
                 </NavLink>
+            </div>
+            <div className="sw-switch-lg">
+                <span>{curentlg}</span>
+                <span className="sw-dropdown"></span>
             </div>
         </div>
     )

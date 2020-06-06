@@ -8,7 +8,7 @@ export const useScrollHandler = () => {
 
     useEffect(() => {
         const onScroll = () => {
-            const scrollCheck = window.scrollY < 100
+            const scrollCheck = window.scrollY < 700
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
             }
@@ -26,7 +26,6 @@ const ScrollTopArrow = () => {
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    const reachToFooter = window.pageYOffset >= document.body.scrollHeight - window.innerHeight - 500;
 
     if (!showScroll && window.pageYOffset > 400){
       setShowScroll(true)

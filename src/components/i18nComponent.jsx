@@ -1,12 +1,10 @@
-import {I18nextProvider, useTranslation} from "react-i18next";
+import {I18nextProvider, Trans, useTranslation} from "react-i18next";
 import React from "react";
 
 function I18n(props) {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
-    return <I18nextProvider i18n={i18n}>
-        {t(props.text)}
-    </I18nextProvider>
+    return t(props.text);
 }
 
 export default I18n;

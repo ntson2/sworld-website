@@ -1,3 +1,9 @@
+// Swrold language
+export const SW_LANGUAGE = {
+    EN: 'en',
+    VN: 'vn'
+}
+
 // Sworld contact label
 export const SW_INFOR = {
     HOTLINE: `(+84) 817 701 604`,

@@ -51,6 +51,51 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_nguye_quoc_hung_carier: `CEO LogiGear Hoa Kỳ`,
                 sw_gs_truong_carier: `French government's International Commerce Advisor`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,
+                sw_don_le_carier: `Co-Founder &CEO Everest Education`,
+                sw_address_label: 'Address',
+
+                sw_founder_decs: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum`,
+                sw_about_us_sologan: `We're more than meadia team`,
+                sw_product_sologent: `WE WORK WITH YOU. NOT FOR YOU`,
+
+                sw_service_production: `SẢN XUẤT`,
+                sw_services_connect_and_publishing: `PUBLISHING`,
+                sw_service_international_connect: `INTERNATIONAL RELATIONS`,
+                sw_service_event: `event`,
+
+                sw_service_production_detail_header: `We offer 3 services`,
+                sw_service_production_detail_1: `TV Shows products: Documentaries, narratives, reportages, reality shows, talkshows, gameshows...`,
+                sw_service_production_detail_2: `Digital products: Videos for digital news outlets and social media`,
+                sw_service_production_detail_3: `TVC, Viral, corporate story, documentary...`,
+
+                sw_service_connect_and_publishing_detail_header: `Optimizing media products and omnichannel publication: Broadcasting - Online News - Digital`,
+                sw_service_connect_and_publishing_detail_1: `Broadcasting: VTV, VTC, VOV, HTV, THVL, LA34, ANTV...`,
+                sw_service_connect_and_publishing_detail_2: `Online News: Zingnews, Vnexpress, Kinh tế đô thị`,
+                sw_service_connect_and_publishing_detail_3: `S-World Channel: multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
+                sw_service_connect_and_publishing_detail_4: `Out-of-home (OOH) Advertising: Airport, elevators, public transportation...`,
+
+                sw_service_international_connect_detail_1: `Connecting foreign entities, partners, businesses that wish to come to Vietnam for investment and event hosting`,
+                sw_service_international_connect_detail_2: `Connecting Vietnamese entities, partners, businesses that wish to reach globally for investment and event hosting`,
+
+                sw_service_event_detail_1: `Ceremony`,
+                sw_service_event_detail_2: `Conference`,
+                sw_service_event_detail_3: `Launching`,
+                sw_service_event_detail_4: `Show/Festival`,
+
+                contact_name: "Name*",
+                contact_phone: "Tel",
+                contact_email: "Email*",
+                contact_message: "Your Message*",
+                contact_submit: "Submit",
+                contact_submit_error: "Error submitting the form. Please try again.",
+                contact_submit_success: "Your message has been sent. We will contact you shortly.",
+                close_button: "Close",
+                contact_title: "Send us a feedback"
             }
         },
         vn: {
@@ -99,6 +144,47 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_nguye_quoc_hung_carier: `Chủ tịch LogiGear Hoa Kỳ`,
                 sw_gs_truong_carier: `Cố vấn của Chính phủ Pháp về Thương mại quốc tế`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,
+                sw_don_le_carier: `Co-Founder &CEO Everest Education`,
+                sw_address_label: 'Địa chỉ',
+                sw_founder_decs: `Tôi sinh ra ở huyện miền núi biên giới Hương Sơn - Hà Tĩnh.
+                Tuổi thơ của tôi gắn với cánh đồng. Tôi chăn trâu, cắt cỏ và gặt lúa.
+                Mùa xuân hạ là lúc trăng tròn vằng vặc, gia đình tôi và nhiều `,
+                sw_about_us_sologan: `Không đơn thuần chỉ là một team media`,
+                sw_product_sologent: `WE WORK WITH YOU. NOT FOR YOU`,
+
+                sw_service_production: `SẢN XUẤT`,
+                sw_services_connect_and_publishing: `LIÊN KẾT - PHÁT HÀNH`,
+                sw_service_international_connect:`KẾT NỐI QUỐC TẾ`,
+                sw_service_event: `SỰ KIỆN`,
+
+                sw_service_production_detail_header: `3 sản phẩm cộng hưởng`,
+                sw_service_production_detail_1: `Sản phẩm dành cho TV Show: Phim tài liệu, ký sự, phóng sự, truyền hình thực tế, Talkshow, Gamshow...`,
+                sw_service_production_detail_2: `Sản phẩm dành cho Digital: Kết hợp lan toả từ Báo điện tử và mạng xã hội`,
+                sw_service_production_detail_2: `Sản phẩm dành cho doanh nghiệp: TVC, Viral, phóng sự, phim tài liệu doanh nghiệp`,
+
+                sw_service_connect_and_publishing_detail_header: `Tối ưu hoá sản phẩm và phát hành đa kênh: Truyền hình - Báo điện tử - Digital`,
+                sw_service_connect_and_publishing_detail_1: `Truyền hình: VTV, VTC, VOV, HTV, THVL, LA34, ANTV...`,
+                sw_service_connect_and_publishing_detail_2: `Online News: Zingnews, Vnexpress, Kinh tế đô thị`,
+                sw_service_connect_and_publishing_detail_3: `S-World Channel: multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
+                sw_service_connect_and_publishing_detail_4: `Quảng cáo OOH (Out-of-home advertising): Sân bay, thang máy, phương tiện giao thông…`,
+
+                sw_service_international_connect_detail_1: `Kết nối các công ty, các đơn vị, cá nhân nước ngoài muốn đến Việt Nam đầu tư, khám phá, tổ chức sự kiện`,
+                sw_service_international_connect_detail_2: `Kết nối các công ty, các đơn vị, cá nhân Việt Nam muốn ra nước ngoài đầu tư, khám phá, tổ chức sự kiện `,
+
+                sw_service_event_detail_1: `Hội nghị`,
+                sw_service_event_detail_2: `Hội thảo`,
+                sw_service_event_detail_3: `Kỷ niệm, Hội chợ`,
+                sw_service_event_detail_4: `Triển lãm, Festival...`,
+
+                contact_name: "Tên*",
+                contact_phone: "Số Điện Thoại",
+                contact_email: "Email*",
+                contact_message: "Lời Nhắn Cho Chúng Tôi*",
+                contact_submit: "Gửi",
+                contact_submit_error: "Gửi bị lỗi. Xin vui lòng gửi lại.",
+                contact_submit_success: "Lời nhắn của bạn đã được gửi đi. Chúng tôi sẽ liên lạc trong thời gian sớm nhất.",
+                close_button: "Đóng",
+                contact_title: "Để lại lời nhắn"
             }
         }
     },

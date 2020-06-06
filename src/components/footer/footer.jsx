@@ -22,6 +22,7 @@ const FooterPage = () => {
                 </div>
                 <div className="sw-contact">
                     <div className="sw-hotline">Holine: { CONSTANTS.SW_INFOR.HOTLINE }</div>
+                    <div className="sw-hotline">Email: { CONSTANTS.SW_INFOR.EMAIL }</div>
                     <div className="sw-address"><I18n text={"sw_address_label"} />: { CONSTANTS.SW_INFOR.ADDRESS }</div>
                 </div>
             </div>

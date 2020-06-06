@@ -22,7 +22,17 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 events_text: "Events",
                 events_detail: "Events",
                 about_us_title: "About Us",
-                about_us_content: "We are awesome people"
+                about_us_content: "We are awesome people",
+
+                contact_name: "Name*",
+                contact_phone: "Tel",
+                contact_email: "Email*",
+                contact_message: "Your Message*",
+                contact_submit: "Submit",
+                contact_submit_error: "Error submitting the form. Please try again.",
+                contact_submit_success: "Your message has been sent. We will contact you shortly.",
+                close_button: "Close",
+                contact_title: "Send us a feedback"
             }
         },
         vn: {
@@ -42,7 +52,17 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 events_text: "Sự Kiện",
                 events_detail: "Sự Kiện",
                 about_us_title: "Chúng Tôi Là Ai",
-                about_us_content: "Một đội ngũ tuyệt vời"
+                about_us_content: "Một đội ngũ tuyệt vời",
+
+                contact_name: "Tên*",
+                contact_phone: "Số Điện Thoại",
+                contact_email: "Email*",
+                contact_message: "Lời Nhắn Cho Chúng Tôi*",
+                contact_submit: "Gửi",
+                contact_submit_error: "Gửi bị lỗi. Xin vui lòng gửi lại.",
+                contact_submit_success: "Lời nhắn của bạn đã được gửi đi. Chúng tôi sẽ liên lạc trong thời gian sớm nhất.",
+                close_button: "Đóng",
+                contact_title: "Để lại lời nhắn"
             }
         }
     },

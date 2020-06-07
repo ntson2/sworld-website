@@ -10,7 +10,7 @@ const speaker = process.env.PUBLIC_URL + '/icon/speaker.svg';
 const speakerStyle = UTIL.getBackgroundImgStyle(speaker, {width: '5rem', height: '5rem'}, false);
 
 const VideoBackground = () => {
-    const scroll = useScrollHandler();
+    const scroll = useScrollHandler(800);
     const [muted, setMuted] = useState(true);
 
     const onToggeMuted = () => {

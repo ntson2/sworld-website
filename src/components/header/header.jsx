@@ -17,7 +17,7 @@ const Header = () =>  {
     const { t, i18n } = useTranslation('en');
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
-    const scroll = useScrollHandler();
+    const scroll = useScrollHandler(200);
     const currentLng = i18n.language;
 
     // Initial active language

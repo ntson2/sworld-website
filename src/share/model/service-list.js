@@ -19,7 +19,7 @@ const ServicesList = [
         _icon: [produceIconRed, produceIconWhite],
     },
     {
-        _name: 'sw_service_production_detail_header',
+        _name: 'sw_services_connect_and_publishing',
         _decs: [
             `sw_service_connect_and_publishing_detail_1`,
             `sw_service_connect_and_publishing_detail_2`,

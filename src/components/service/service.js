@@ -40,9 +40,9 @@ const Service = (props) => {
                 <div className="sw-service-content-wrapper">
                     <div className="sw-service-name"><I18n text={listData._name}/></div>
                     {listData._decs.map(dec => <div className="sw-service-decs"><I18n text={dec}/></div>)}
-                    <div className="sw-service-arrow" style={arrowStyle}></div>
                 </div>
             </div>
+            <div className="sw-service-arrow" style={arrowStyle}></div>
         </div>
     )
 }

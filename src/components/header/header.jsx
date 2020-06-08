@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
 import * as UTIL from '../../share/util/util';
@@ -14,7 +14,7 @@ const swRightIcon = process.env.PUBLIC_URL + '/icon/right.svg';
 
 const Header = () =>  {
     let swIconStyle;
-    const { t, i18n } = useTranslation('en');
+    const { i18n } = useTranslation('en');
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
     const scroll = useScrollHandler(200);

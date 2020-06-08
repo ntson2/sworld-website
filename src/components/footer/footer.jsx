@@ -15,13 +15,12 @@ const FooterPage = () => {
                 <div className="sw-social">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-                    <a href="https://www.facebook.com/ntson" className="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/sworldmultimedia" className="fa fa-facebook"></a>
                     <a href="https://www.youtube.com/" className="fa fa-youtube"></a>
-                    <a href="https://www.linkedin.com/in/wilson-ngo-7984ba34/" className="fa fa-linkedin"></a>
-                    <a href="https://www.youtube.com/" className="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/s-worldmultimedia" className="fa fa-linkedin"></a>
                 </div>
                 <div className="sw-contact">
-                    <div className="sw-hotline">Holine: { CONSTANTS.SW_INFOR.HOTLINE }</div>
+                    <div className="sw-hotline">Hotline: { CONSTANTS.SW_INFOR.HOTLINE }</div>
                     <div className="sw-hotline">Email: { CONSTANTS.SW_INFOR.EMAIL }</div>
                     <div className="sw-address"><I18n text={"sw_address_label"} />: { CONSTANTS.SW_INFOR.ADDRESS }</div>
                 </div>

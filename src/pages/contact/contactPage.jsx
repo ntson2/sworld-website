@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from "react";
 import {AppProvider, Button, Form, FormLayout, Frame, Modal, Page, TextContainer, TextField} from "@shopify/polaris";
 import I18n from "../../components/i18nComponent";
+import {useTranslation} from "react-i18next";
 
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -8,6 +9,7 @@ function validateEmail(email) {
 }
 
 function FeedbackForm() {
+    const { i18n } = useTranslation();
     const [email, setEmail] = useState();
     const [phone, setPhone] = useState();
     const [name, setName] = useState();
@@ -59,7 +61,7 @@ function FeedbackForm() {
             setErrorMessageMessage("Message is required");
             isValid = false;
         }
-        if (isNaN(phone)) {
+        if (phone && isNaN(phone)) {
             setErrorMessagePhone('Not a valid number');
             isValid = false;
         }
@@ -82,7 +84,7 @@ function FeedbackForm() {
             const requestOptions = {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({fullName: name, email: email, phone: phone, message: message})
+                body: JSON.stringify({fullName: name, email: email, phone: phone, message: message, language: i18n.language})
             };
 
             try {

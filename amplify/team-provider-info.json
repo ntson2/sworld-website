@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-sworldbackend-dev-01902-authRole",
+            "UnauthRoleArn": "arn:aws:iam::263075560956:role/amplify-sworldbackend-dev-01902-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::263075560956:role/amplify-sworldbackend-dev-01902-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-sworldbackend-dev-01902-deployment",
+            "UnauthRoleName": "amplify-sworldbackend-dev-01902-unauthRole",
+            "StackName": "amplify-sworldbackend-dev-01902",
+            "StackId": "arn:aws:cloudformation:us-east-1:263075560956:stack/amplify-sworldbackend-dev-01902/5f4ceda0-9be3-11ea-9310-0e353767367b",
+            "AmplifyAppId": "d17szdcvwn8flx"
+        }
+    }
+}

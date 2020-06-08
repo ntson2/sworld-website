@@ -61,7 +61,7 @@ function FeedbackForm() {
             setErrorMessageMessage("Message is required");
             isValid = false;
         }
-        if (isNaN(phone)) {
+        if (phone && isNaN(phone)) {
             setErrorMessagePhone('Not a valid number');
             isValid = false;
         }

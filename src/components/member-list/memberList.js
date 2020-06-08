@@ -26,7 +26,7 @@ const MemberList = () => {
 
             <div className="sw-advisor-label">
                 <div className="main-label">
-                    Our Advisor
+                    <I18n text="our_advisors_title"/>
                 </div>
                 <div className="sub-label">
                     S-world thanks all of you

@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
-import { red } from '@material-ui/core/colors';
-import zIndex from '@material-ui/core/styles/zIndex';
+import * as _ from 'lodash';
 
-export const useScrollHandler = () => {
+
+export const useScrollHandler = (props) => {
     const [scroll, setScroll] = useState(1)
+    const offsetY = _.cloneDeep(props);
 
     useEffect(() => {
         const onScroll = () => {
-            const scrollCheck = window.scrollY < 700
+            const scrollCheck = window.scrollY < offsetY;
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
             }

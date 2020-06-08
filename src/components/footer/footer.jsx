@@ -16,8 +16,9 @@ const FooterPage = () => {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
                     <a href="https://www.facebook.com/sworldmultimedia" className="fa fa-facebook"></a>
-                    <a href="https://www.youtube.com/" className="fa fa-youtube"></a>
+                    <a href="https://www.youtube.com/channel/UCzod695AmgnnUeKSSUZ-t1A" className="fa fa-youtube"></a>
                     <a href="https://www.linkedin.com/company/s-worldmultimedia" className="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lifeatsworld" className="fa fa-instagram"></a>
                 </div>
                 <div className="sw-contact">
                     <div className="sw-hotline">Hotline: { CONSTANTS.SW_INFOR.HOTLINE }</div>

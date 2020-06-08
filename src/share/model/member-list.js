@@ -20,6 +20,16 @@ const Listmember = [
         _decs: `sw_founder_decs`
     },
     {
+        _name: `GS. TRẦN NGỌC PHÚC `,
+        _img: `${mrPhuc}`,
+        _carier: 'sw_gs_phuc_carier',
+        _role: `sw_inspirational_advisor`,
+        _fbLink: `facebook.com`,
+        _liLink: `facebook.com`,
+        _twlink: `facebook.com`,
+        _decs: ``
+    },
+    {
         _name: `FREDDY GENTIZON`,
         _img: `${mrFreddy}`,
         _role: `sw_communication_advisor`,
@@ -31,6 +41,16 @@ const Listmember = [
         when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         It has survived not only five centuries, but also the leap into electronic typesetting, 
         remaining essentially unchanged. `
+    },
+    {
+        _name: `NGUYỄN QUỐC HÙNG`,
+        _img: `${mrHung}`,
+        _role: `sw_entrepreneurial_advisor`,
+        _carier: 'sw_nguye_quoc_hung_carier',
+        _fbLink: `facebook.com`,
+        _liLink: `facebook.com`,
+        _twlink: `facebook.com`,
+        _decs: ``
     },
     {
         _name: `VY LÊ`,
@@ -56,37 +76,10 @@ const Listmember = [
         remaining essentially unchanged. `
     },
     {
-        _name: `NGUYỄN QUỐC HÙNG`,
-        _img: `${mrHung}`,
-        _role: `sw_entrepreneurial_advisor`,
-        _carier: 'sw_nguye_quoc_hung_carier',
-        _fbLink: `facebook.com`,
-        _liLink: `facebook.com`,
-        _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
-    },
-    {
         _name: `GS. PHAN VĂN TRƯỜNG`,
         _img: `${mrTruong}`,
         _carier: 'sw_gs_truong_carier',
         _role: `sw_organizational_advisor`,
-        _fbLink: `facebook.com`,
-        _liLink: `facebook.com`,
-        _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
-    },
-
-    {
-        _name: `GS. TRẦN NGỌC PHÚC `,
-        _img: `${mrPhuc}`,
-        _carier: 'sw_gs_phuc_carier',
-        _role: `sw_inspirational_advisor`,
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,

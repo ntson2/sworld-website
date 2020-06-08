@@ -13,7 +13,7 @@ const Member = (props) => {
     const firstListStyle = props.isFirstlist ? true : false;
 
     return (
-        <div className="Member" style={firstListStyle ? { width: `calc(100% - 25px)`} : {width: `calc(30% - 25px)`}}>
+        <div className="Member">
             <div className="sw-member-genaral">
                 <div className="sw-member-img" style={memberImg}></div>
                 <h2>{<I18n text={memberData._name}/>}</h2>

@@ -1,4 +1,5 @@
 @import '../../../public/scss/variable.scss';
+@import '../../../public/scss/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,275;1,400;1,700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
 .Story {
@@ -59,22 +60,33 @@
     .sw-story-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
 
         .sw-bg-container {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
+            width: 95%;
+            margin-bottom: 8rem;
+            --borderWidth: .5rem;
+            background: #1D1F20;
+            position: relative;
+            border-radius: var(--borderWidth);
+            &:after {
+                content: '';
+                position: absolute;
+                top: calc(-1 * var(--borderWidth));
+                left: calc(-1 * var(--borderWidth));
+                height: calc(100% + var(--borderWidth) * 2);
+                width: calc(100% + var(--borderWidth) * 2);
+                background: linear-gradient(#5073b8, #1098ad, #07b39b, #6fba82);
+                border-radius: calc(2 * var(--borderWidth));
+                z-index: -1;
+                background-size: 300% 300%;
+              }
+              
             .sw-team-img {
                 display: flex;
                 align-items: center;
-                width: 90%;
                 margin: auto;
-                max-width: 60rem;
-                position: relative;
                 padding: 30% 2em;
                 box-sizing: border-box;
             }
@@ -83,14 +95,12 @@
         .sw-story-quotes {
             
             display: flex;
-            padding: 0 6rem;
+            padding: 0 4rem;
             height: 100%;
             flex-direction: column;
-            width: 50%;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            width: 100%;
             align-self: center;
+            justify-self: center;
 
             .sw-read-more-btn {
                 font-family: 'Josefin Sans', sans-serif;
@@ -100,8 +110,7 @@
                 width: 35%;
                 height: 4.5rem;
                 border: 1px solid #2dd3aa;
-                margin-top: 6rem;
-                margin-right: 2rem;
+                margin: 4rem auto;
                 font-size: 1.8rem;
                 align-self: flex-start;
                 position: relative;
@@ -138,6 +147,22 @@
                     bottom: -1rem;
                     right: -1.1rem;
                 }
+            }
+        }
+    }
+}
+
+@include breakpoints (large) {
+    .Story {
+        .sw-story-container {
+            justify-content: space-around;
+
+            .sw-bg-container {
+                width: 45%;
+            }
+    
+            .sw-story-quotes {
+                width: 45%;
             }
         }
     }

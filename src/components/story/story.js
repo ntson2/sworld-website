@@ -4,7 +4,7 @@ import I18n from '../i18nComponent';
 import * as UTIL from '../../share/util/util';
 
 const teamImg = process.env.PUBLIC_URL + '/img/sw_team.JPG';
-const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '80%', height: '35rem'}, false);
+const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '100%', height: '100%'}, false);
 
 const quotesTop = process.env.PUBLIC_URL + '/icon/sw-top-quotes.svg';
 const topQuotesStyle = UTIL.getBackgroundImgStyle(quotesTop, { width: '3rem', height: '3rem'});
@@ -24,6 +24,9 @@ const Story = () => {
                 </div>
             </div>
             <div className="sw-story-container">
+                <div className="sw-bg-container">
+                    <div className="sw-team-img" style={teamImgStyle}></div>
+                </div>
                 <div className="sw-story-quotes">
                     <div className="quotes">
                         <div className="sw-quotes-logo-top" style={topQuotesStyle}></div>
@@ -42,9 +45,6 @@ const Story = () => {
                         <div className="sw-quotes-logo-bttom" style={bottomQuotesStyle}></div>
                     </div>
                     <div className="sw-read-more-btn">Read more </div>
-                </div>
-                <div className="sw-bg-container">
-                    <div className="sw-team-img" style={teamImgStyle}></div>
                 </div>
             </div>
         </div>

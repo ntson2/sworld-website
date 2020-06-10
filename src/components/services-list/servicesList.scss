@@ -7,7 +7,7 @@
     width: 92%;
     min-height: 50rem;
     margin: 0 auto;
-    padding-top: 14rem;
+    padding-top: 6rem;
 
     &:before {
         position: absolute;
@@ -55,6 +55,7 @@
 
 @include breakpoints (x-small) {
     .ServicesList {
+        padding-top: 8rem;
         .sw-service-list-label, .sw-service-list-sub-label {
             width: 86%;
             margin: 0 auto;
@@ -68,6 +69,7 @@
 
 @include breakpoints (x-medium) {
     .ServicesList {
+        padding-top: 12rem;
         .sw-service-list-label, .sw-service-list-sub-label {
             width: 96%;
         }
@@ -76,6 +78,7 @@
 
 @include breakpoints (x-large) {
     .ServicesList {
+        padding-top: 14rem;
         .sw-service-list-label, .sw-service-list-sub-label {
             width: 100%;
         }

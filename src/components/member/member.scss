@@ -1,8 +1,9 @@
 @import '../../../public/scss/variable.scss';
+@import '../../../public/scss/mixins.scss';
 
 .Member {
     background: #fff;
-    width: calc(25% - 25px);
+    width: calc(100%);
     display: inline-block;
     margin: 0 10px;
     text-align: center;
@@ -11,7 +12,7 @@
     box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
     border-radius: 10px;
     position: relative;
-    min-height: 30rem;
+    height: 50rem;
     margin-bottom: 3rem;
 
     h2 {
@@ -141,73 +142,33 @@
             margin-bottom: 0;
         }
 
-        }
-
-        .sw_carier {
-            font-weight: bold;
-        }
-    } 
-
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .member {
-            width: calc(33.333333% - 25px);
-            margin-bottom: 30px;
-        }
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .member {
-            width: calc(33.333333% - 25px);
-            margin-bottom: 30px;
-            padding: 35px 10px;
-        }
-        .member-img {
-            width: 160px;
-            height: 160px;
-        }
-        .member-info {
-            padding: 50px 27px 10px;
-            height: 275px;
-        }
-        .member-social {
-            a {
-                margin: 0 5px;
-            }
-        }
+    .sw_carier {
+        font-weight: bold;
     }
+}
 
-    @media only screen and (max-width: 767px) {
-        .member {
-            width: 100%;
-            margin-bottom: 30px;
-            margin-left: 0;
-        }
+@include breakpoints (small) {
+    .Member {
+        width: calc(100% - 25px);
     }
+}
 
-    @media (min-width: 1199px) and (max-width: 1390px) {
-        .member {
-            padding: 35px 10px;
-        }
-        .member-img {
-            width: 160px;
-            height: 160px;
-        }
-        .member-info {
-            padding: 50px 27px 10px;
-            height: 275px;
-        }
-        .member-social a {
-            margin: 0 5px;
-        }
+@include breakpoints (medium) {
+    .Member {
+        width: calc(50% - 25px);
     }
+}
 
-    @media only screen and (max-width: 479px) {
-        .member-img {
-            width: 180px;
-            height: 180px;
-        }
-        .member-info {
-            padding: 50px 20px 10px;
-            height: 320px;
-        }
+@include breakpoints (large) {
+    .Member {
+        width: calc(33% - 25px);
+    }
+}
+
+@include breakpoints (x-large) {
+    .Member {
+        width: calc(25% - 25px);
+    }
 }

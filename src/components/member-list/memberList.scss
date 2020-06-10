@@ -1,13 +1,14 @@
 @import '../../../public/scss/variable.scss';
+@import '../../../public/scss/mixins.scss';
 
 .MemberList {
     position: relative;
     margin-top: 25rem;
-    width: 100%;
+    width: 98%;
     min-height: 50rem;
     height: auto;
     margin: 0 auto;
-    padding-top: 14rem;
+    padding-top: 5rem;
 
     .sw-header-wrapper {
         display: flex;
@@ -15,11 +16,11 @@
         align-content: center;
         justify-content: flex-start;
         align-items: center;
-        width: 92%;
+        width: 100%;
         margin: 0 auto;
 
         .sw-label-wrapper {
-            width: 30%;
+            width: 100%;
             .sw-member-list-label {
                 text-align: left;
                 font-family: $secondary-font;
@@ -43,7 +44,7 @@
         }
 
         .sw-devider {
-            width: 70%;
+            width: 10%;
             border-bottom: 3px solid $fresh-red;
         }
 
@@ -88,20 +89,33 @@
             height: 8rem;
             width: 2px;
             position: absolute;
-            top: -30px;
+            top: -8rem;
             left: 50%;
         }
     }
 
     .sw-second-list {
-        width: 92%;
+        width: 98%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap ;
-        justify-content: space-between;
         align-items: center;
-        align-content: space-between;
         justify-items: center; 
+    }
+}
+
+@include breakpoints (medium) {
+    .MemberList {
+        padding-top: 10rem;
+
+        .sw-header-wrapper {
+            .sw-label-wrapper {
+                width: 40%;
+            }
+            .sw-devider {
+                width: 60%;
+            }
+        }
     }
 }

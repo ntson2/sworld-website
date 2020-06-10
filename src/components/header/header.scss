@@ -15,8 +15,8 @@
     justify-content: space-between;
     z-index: 2;
     background: $white;
-    @include transition(all 200ms ease-in-out);
     a {
+        @include transition(all 200ms ease-in-out);
         text-decoration: none;
     }
 
@@ -32,9 +32,9 @@
         left: 0;
         background: #1b1a1a;
         margin: 0 auto;
-        transition: all .3s ease-in-out;
         
         a {
+            transition: all .3s ease-in-out;
             font-family: Poppins;
             color: #9b9b9b;
             padding: 1.5rem;

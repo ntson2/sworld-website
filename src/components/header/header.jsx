@@ -23,7 +23,7 @@ const Header = () =>  {
     const currentLng = i18n.language;
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(min-width: 1024px)");
+        const mediaQuery = window.matchMedia("(min-width: 1025px)");
         mediaQuery.addEventListener('change', handleMediaQueryChange);
         handleMediaQueryChange(mediaQuery);
 
@@ -69,7 +69,10 @@ const Header = () =>  {
                 <div className="sw-logo" style={logoStyle}>
                 </div>
             </div>
-            <div className={isLargeScreen ? 'sw-full-nav' : burger ? 'sw-burger-active' : 'sw-burger'}>
+            <div
+                className={isLargeScreen ? 'sw-full-nav' : burger ? 'sw-burger-active' : 'sw-burger'}
+                onClick={burger ? toggleMenu : undefined}
+            >
                 <NavLink to="/home" activeClassName="sw-nav-selected">
                     {<I18n text={"home_tab"} />}
                 </NavLink>

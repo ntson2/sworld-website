@@ -2,18 +2,12 @@
 @import '../../../public/scss/mixins.scss';
 
 .Service {
-    width: 25%;
-    height: 44rem;
-    margin: 0 1.5rem;
+    width: 96%;
+    height: 55vh;
+    margin: 0 auto;
     color: $black;
     position: relative;
-    
-    &:first-child {
-        margin-left: 0;
-    }
-    &:last-child {
-        margin-right: 0;
-    }
+    margin-bottom: 4rem;
     
     .sw-service-wrapper {
         margin-top: 2.5rem;
@@ -108,5 +102,33 @@
         .sw-service-arrow {
             transform: translateY(2.5rem);
         }
+    }
+
+}
+
+@include breakpoints (small) {
+    .Service {
+        height: 50vh;
+    }
+}
+
+@include breakpoints (x-small) {
+    .Service {
+        width: 86%;
+        height: 45vh;
+    }
+}
+
+@include breakpoints (x-medium) {
+    .Service {
+        width: 45%;
+        height: 50vh;
+    }
+}
+
+@include breakpoints (x-large) {
+    .Service {
+        width: 25%;
+        height: 55vh;
     }
 }

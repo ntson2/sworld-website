@@ -19,10 +19,13 @@
 // Named Breakpoint Values
 $breakpoints: (
   small: 320px,
+  x-small: 480px,
   medium: 640px,
+  x-medium: 768px,
+  xx-medium: 992px,
   large: 1024px,
-  x-large: 1600px,
-  xx-large: 2800px,
+  x-large: 1200px,
+  xx-large: 1824px,
 );
 
 // SCSS Breakpoint shortcut mixin

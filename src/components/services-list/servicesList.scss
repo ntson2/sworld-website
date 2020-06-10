@@ -1,4 +1,5 @@
 @import '../../../public/scss/variable.scss';
+@import '../../../public/scss/mixins.scss';
 
 .ServicesList {
     position: relative;
@@ -22,7 +23,7 @@
         margin: 1rem 0;
         padding: .2rem 0;
         border-top: .3rem solid $fresh-red;
-        width: 6%;
+        width: 8%;
     }
 
     .sw-service-list-label {
@@ -48,5 +49,39 @@
     .service-wrapper {
         padding-top: 3.5rem;
         display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@include breakpoints (x-small) {
+    .ServicesList {
+        .sw-service-list-label, .sw-service-list-sub-label {
+            width: 86%;
+            margin: 0 auto;
+        }
+
+        .sw-devider {
+            display: none;
+        }
+    }
+}
+
+@include breakpoints (x-medium) {
+    .ServicesList {
+        .sw-service-list-label, .sw-service-list-sub-label {
+            width: 96%;
+        }
+    }
+}
+
+@include breakpoints (x-large) {
+    .ServicesList {
+        .sw-service-list-label, .sw-service-list-sub-label {
+            width: 100%;
+        }
+
+        .sw-devider {
+            display: block;
+        }
     }
 }

@@ -10,7 +10,7 @@ const landmarkStyle = UTIL.getBackgroundImgStyle(landmark, {width: '100%', heigh
 const FooterPage = () => {
     return (
         <div className="Footer">
-            <div className="sw-footer-overlay" style={landmarkStyle}>
+            <div className="sw-footer-overlay" style={{background: 'black', opacity: '0.8'}}>
                 <div className="sw-devider"></div>
                 <div className="sw-social">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>

@@ -12,7 +12,7 @@ const ServicesList = () => {
         <div className="ServicesList">
             <div className="sw-devider"></div>
             <div className="sw-service-list-label"><I18n text={"our_services"}/></div>
-            <div className="sw-service-list-sub-label"><I18n text={"sw_product_sologent"}/> </div>
+            <div className="sw-service-list-sub-label"><I18n text={"our_services_sologan"}/> </div>
                 <div className="service-wrapper">
                     {servicesList.map(item => <Service listData = { item }/>)}
                 </div>

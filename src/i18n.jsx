@@ -26,6 +26,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 our_partner: 'Our partner',
                 our_member: 'About us',
                 our_services: 'Our services',
+                our_services_sologan: 'We work with you, not for you',
                 sw_founder: `S-World Multimedia Founder & CEO`,
                 sw_founder_name: `Dang Soan`,
                 sw_inspirational_advisor: `Inspirational Advisor`,
@@ -61,7 +62,6 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum`,
                 sw_about_us_sologan: `We're more than a media team`,
-                sw_product_sologent: `WE WORK WITH YOU. NOT FOR YOU`,
 
                 sw_service_production: `Producing`,
                 sw_services_connect_and_publishing: `PUBLISHING`,
@@ -119,7 +119,8 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 our_advisors_title: "Cố Vấn",
                 our_partner: 'Đối tác',
                 our_member: 'Về chúng tôi',
-                out_services: 'Dịch vụ',
+                our_services: 'Dịch vụ',
+                our_services_sologan: 'We work with you, not for you',
                 sw_founder: `Nhà sáng lập và Giám đốc điều hành S-World Multimedia`,
                 sw_founder_name: `Đặng Soan`,
                 sw_inspirational_advisor: `Cố vấn truyền cảm hứng`,
@@ -151,7 +152,6 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 Tuổi thơ của tôi gắn với cánh đồng. Tôi chăn trâu, cắt cỏ và gặt lúa.
                 Mùa xuân hạ là lúc trăng tròn vằng vặc, gia đình tôi và nhiều `,
                 sw_about_us_sologan: `Không đơn thuần chỉ là một team media`,
-                sw_product_sologent: `WE WORK WITH YOU. NOT FOR YOU`,
 
                 sw_service_production: `SẢN XUẤT`,
                 sw_services_connect_and_publishing: `LIÊN KẾT - PHÁT HÀNH`,

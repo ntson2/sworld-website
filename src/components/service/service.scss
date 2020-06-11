@@ -3,7 +3,7 @@
 
 .Service {
     width: 96%;
-    height: 55vh;
+    height: 60vh;
     margin: 0 auto;
     color: $black;
     position: relative;
@@ -108,14 +108,14 @@
 
 @include breakpoints (small) {
     .Service {
-        height: 50vh;
+        height: 55vh;
     }
 }
 
 @include breakpoints (x-small) {
     .Service {
         width: 86%;
-        height: 45vh;
+        height: 50vh;
     }
 }
 

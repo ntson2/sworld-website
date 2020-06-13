@@ -34,7 +34,7 @@ const MemberList = () => {
             </div>
 
             <div className="sw-second-list">
-                {advisorList.map(member => <Member {...{dataMember: member}} />)}
+                {advisorList.map(member => <Member key={member._id} {...{dataMember: member}} />)}
             </div>
         </div>
     )

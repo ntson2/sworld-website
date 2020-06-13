@@ -1,6 +1,5 @@
 .VideoBackground {
     position: relative;
-    height: 100vh;
 
     .sw-mute-wrapper {
         position: absolute;
@@ -8,11 +7,11 @@
         justify-content: center;
         align-items: center;
         z-index: 10;
-        width: 7rem;
-        height: 7rem;
+        width: 3rem;
+        height: 3rem;
         padding: .5rem;
-        bottom: 3rem;
-        right: 3rem;
+        bottom: 1rem;
+        right: 1rem;
         border: 2px solid #60daaa;
         border-radius: 50%;
         z-index: 1;
@@ -27,4 +26,12 @@
         transform: translate(-50%, -50%);
         object-fit: cover;
     }
+}
+
+.bg-full-height {
+    height: 100vh;
+}
+
+.bg-normal {
+    height: 35vh;
 }

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import '../header/header.scss';
 import * as UTIL from '../../share/util/util';
-import { useScrollHandler } from "../../share/scroll-handler/scroll-handler";
+import { useScrollHandler, useChangeWindowMode } from "../../share/scroll-handler/scroll-handler";
 import { useTranslation } from 'react-i18next';
 import I18n from "../i18nComponent";
 import * as CONSTANT from '../../share/constants/constants';
@@ -19,9 +19,11 @@ const Header = () =>  {
     const { i18n } = useTranslation('en');
     const currentRoute = useLocation();
     const isTransparentHeader = currentRoute && currentRoute.pathname === '/home';
-    const scroll = useScrollHandler(300);
+    const pointToShowHeaderCaseFullWidth = useScrollHandler(300);
+    const pointToFixedHeaderCaseSmallWidth = useScrollHandler(300);
     const currentLng = i18n.language;
-
+    const isLanscapeMode = useChangeWindowMode();
+    
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 1025px)");
         mediaQuery.addEventListener('change', handleMediaQueryChange);
@@ -32,6 +34,7 @@ const Header = () =>  {
         };
     }, []);
 
+    // Function handle change media query
     const handleMediaQueryChange = media => {
         if (media.matches) {
             setLargerScreen(true);
@@ -64,7 +67,13 @@ const Header = () =>  {
     }
 
     return (
-        <div className={`Header ${ (isTransparentHeader && scroll && isLargeScreen) ? 'transparent' : 'visible'} `}>
+        <div className={
+                `Header
+                ${(isTransparentHeader && (pointToShowHeaderCaseFullWidth && isLargeScreen) ||
+                (pointToShowHeaderCaseFullWidth && !isLargeScreen && isLanscapeMode)) ? 'transparent' : 'visible'}
+                ${(!isLargeScreen && isLanscapeMode) ? 'big-height': 'small-height'}
+                ${(isLanscapeMode && pointToShowHeaderCaseFullWidth) ? 'fixed-header' : 'relative-header'}`
+            }>
             <div className="sw-logo-wrapper">
                 <div className="sw-logo" style={logoStyle}>
                 </div>

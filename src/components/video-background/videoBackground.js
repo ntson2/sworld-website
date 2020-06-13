@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import '../video-background/videoBackground.scss';
-import { useScrollHandler } from "../../share/scroll-handler/scroll-handler";
+import { useScrollHandler, useChangeWindowMode } from "../../share/scroll-handler/scroll-handler";
 import * as UTIL from '../../share/util/util';
 
 const vdSrc = process.env.PUBLIC_URL + '/video/vd-background.mp4';
 const muted = process.env.PUBLIC_URL + '/icon/mute.svg';
-const mutedStyle = UTIL.getBackgroundImgStyle(muted, {width: '5rem', height: '5rem'}, false);
+const mutedStyle = UTIL.getBackgroundImgStyle(muted, {width: '1.5rem', height: '1.5rem'}, false);
 const speaker = process.env.PUBLIC_URL + '/icon/speaker.svg';
-const speakerStyle = UTIL.getBackgroundImgStyle(speaker, {width: '5rem', height: '5rem'}, false);
+const speakerStyle = UTIL.getBackgroundImgStyle(speaker, {width: '1.5rem', height: '1.5rem'}, false);
 
 const VideoBackground = () => {
+    const isLandscapeMode = useChangeWindowMode();
     const scroll = useScrollHandler(800);
     const [muted, setMuted] = useState(true);
 
@@ -27,11 +28,11 @@ const VideoBackground = () => {
     }
 
     return (
-        <div className="VideoBackground">
+        <div className={`VideoBackground  ${isLandscapeMode ? 'bg-full-height' : 'bg-normal'}`}>
             <div className="sw-mute-wrapper">
                 <div className="button-muted" onClick={onToggeMuted} style={muted ? speakerStyle : mutedStyle}></div>
             </div>
-            <video id="vd" autoplay="autoPlay" muted={muted} loop="loop">
+            <video id="vd" autoPlay="autoplay" muted={muted} loop="loop">
                 <source src="https://sworldmedia-website.s3.amazonaws.com/video-background/SHOWREEL.mp4" type="video/mp4" />
             </video>
         </div>

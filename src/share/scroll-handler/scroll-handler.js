@@ -22,6 +22,24 @@ export const useScrollHandler = (props) => {
     return scroll
 }
 
+export const useChangeWindowMode = () => {
+  const [isLanscapeMode, setLandscapeMode] = useState(window.innerWidth > window.innerHeight);
+
+  useEffect(() => {
+    const isPortrait = window.matchMedia("(orientation: portrait)");
+    const handleResizeWindow = (isPortrait) => {
+      setLandscapeMode(!isPortrait.matches);
+    }
+    isPortrait.addEventListener('change', handleResizeWindow);
+
+    return () => {
+      isPortrait.removeListener(handleResizeWindow);
+    }
+  }, [isLanscapeMode, setLandscapeMode])
+
+  return isLanscapeMode;
+}
+
 const ScrollTopArrow = () => {
 
   const [showScroll, setShowScroll] = useState(false)

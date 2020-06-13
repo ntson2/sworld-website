@@ -33,16 +33,6 @@
                 left: -300px;
                 background: $fresh-red;
             }
-
-            &:after {
-                position: absolute;
-                content: "";
-                height: 3px;
-                width: 25rem;
-                top: 25px;
-                right: -300px;
-                background: $fresh-red;
-            }
         }
 
         .sw-sub-label {
@@ -163,6 +153,24 @@
     
             .sw-story-quotes {
                 width: 45%;
+            }
+        }
+    }
+}
+
+@include breakpoints(x-medium) {
+    .Story {
+        .sw-label-wrapper {
+            .sw-main-label {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    height: 3px;
+                    width: 25rem;
+                    top: 25px;
+                    right: -300px;
+                    background: $fresh-red;
+                }
             }
         }
     }

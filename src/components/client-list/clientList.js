@@ -29,6 +29,7 @@ const SamplePrevArrow = (props) => {
           ...style,
           display: "block",
           background: "transparent",
+          fontSize: '2rem'
         }}
       onClick={onClick}
     />
@@ -48,19 +49,64 @@ const sliderSetting = {
     cssEase: "linear",
     speed: 500,
     slidesToShow: 6,
-    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
     swipeToSlide: true,
+
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                infinite: true,
+                dots: true,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              initialSlide: 4,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          }
+    ]
 };
 
 const SliderWrap = styled.div`
     .slick-slider {
         .slick-arrow {
             &:before {
-                font-size:  4rem;
+                font-size: 2rem;
+
+                @media only screen and (min-width: 768px) {
+                    font-size:  4rem;
+                }
+            }
+        }
+
+        .slick-next {
+            right: -16px;
+            @media only screen and (min-width: 768px) {
+                right: -25px;
+            }
+        }
+
+        .slick-prev {
+            left: -16px;
+            @media only screen and (min-width: 768px) {
+                left: -25px;
             }
         }
         .slick-list {

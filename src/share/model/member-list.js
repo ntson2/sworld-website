@@ -6,10 +6,12 @@ const mrDonLe = process.env.PUBLIC_URL + '/img/DonLe.JPG';
 const msVyLe = process.env.PUBLIC_URL + '/img/VyLe.jpg';
 const mrTruong = process.env.PUBLIC_URL + '/img/phanvantruong.jpg';
 const mrPhuc = process.env.PUBLIC_URL + '/img/tranngocphuc.jpg';
+const mrErik = process.env.PUBLIC_URL + '/img/mrErik.png';
 
 
 const Listmember = [
     {
+        _id: 0,
         _name: "ĐẶNG SOAN",
         _img: `${msSoan}`,
         _role: "sw_founder",
@@ -20,6 +22,7 @@ const Listmember = [
         _decs: ``
     },
     {
+        _id: 1,
         _name: `GS. TRẦN NGỌC PHÚC `,
         _img: `${mrPhuc}`,
         _carier: 'sw_gs_phuc_carier',
@@ -30,6 +33,7 @@ const Listmember = [
         _decs: ``
     },
     {
+        _id: 2,
         _name: `GS. PHAN VĂN TRƯỜNG`,
         _img: `${mrTruong}`,
         _carier: 'sw_gs_truong_carier',
@@ -43,6 +47,7 @@ const Listmember = [
         remaining essentially unchanged. `
     },
     {
+        _id: 3,
         _name: `FREDDY GENTIZON`,
         _img: `${mrFreddy}`,
         _role: `sw_communication_advisor`,
@@ -53,6 +58,7 @@ const Listmember = [
         _decs: ``
     },
     {
+        _id: 4,
         _name: `NGUYỄN QUỐC HÙNG`,
         _img: `${mrHung}`,
         _role: `sw_entrepreneurial_advisor`,
@@ -63,6 +69,7 @@ const Listmember = [
         _decs: ``
     },
     {
+        _id: 5,
         _name: `VY LÊ`,
         _img: `${msVyLe}`,
         _carier: 'sw_vy_le_carier',
@@ -73,8 +80,20 @@ const Listmember = [
         _decs: `sw_vy_le_decs`
     },
     {
-        _name: `NGUYỄN VIỆT ĐỨC`,
-        _img: `${mrDuc}`,
+        _id: 6,
+        _name: `Don Le`,
+        _img: `${mrDonLe}`,
+        _carier: 'sw_don_le_carier',
+        _role: `sw_entrepreneurial_advisor`,
+        _fbLink: `facebook.com`,
+        _liLink: `facebook.com`,
+        _twlink: `facebook.com`,
+        _decs: ``
+    },
+    {
+        _id: 7,
+        _name: `ERIK JOSSON`,
+        _img: `${mrErik}`,
         _role: `sw_entrepreneurial_advisor`,
         _carier: 'sw_nguyen_viet_duc_carier',
         _fbLink: `facebook.com`,
@@ -83,10 +102,11 @@ const Listmember = [
         _decs: ``
     },
     {
-        _name: `Don Le`,
-        _img: `${mrDonLe}`,
-        _carier: 'sw_don_le_carier',
+        _id: 8,
+        _name: `NGUYỄN VIỆT ĐỨC`,
+        _img: `${mrDuc}`,
         _role: `sw_entrepreneurial_advisor`,
+        _carier: 'sw_nguyen_viet_duc_carier',
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,

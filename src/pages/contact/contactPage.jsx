@@ -88,7 +88,7 @@ function FeedbackForm() {
             };
 
             try {
-                const response = fetch('https://mnlk6yozri.execute-api.us-east-1.amazonaws.com/dev/backend', requestOptions);
+                const response = fetch('https://7m07mgufbb.execute-api.us-east-1.amazonaws.com/dev/items', requestOptions);
                 setEmail('');
                 setPhone('');
                 setName('');
@@ -192,9 +192,10 @@ function ContactPage() {
                 <Frame>
                     {FeedbackForm()}
                 </Frame>
-            </div></div>        </AppProvider>
+            </div></div>
+        </AppProvider>
 
-        )
+    )
 
 }
 

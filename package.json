@@ -27,7 +27,8 @@
     "react-slick": "^0.26.1",
     "react-sticky-footer": "0.1.0-rc3",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "wait-on": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -52,6 +53,8 @@
   },
   "devDependencies": {
     "cypress": "^4.8.0",
-    "mochawesome": "^6.1.1"
+    "jest": "^26.0.1",
+    "mochawesome": "^6.1.1",
+    "riteway": "^6.1.2"
   }
 }

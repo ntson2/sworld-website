@@ -26,7 +26,7 @@ const Header = () =>  {
     
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 1025px)");
-        mediaQuery.addEventListener('change', handleMediaQueryChange);
+        mediaQuery.addListener(handleMediaQueryChange);
         handleMediaQueryChange(mediaQuery);
 
         return () => {

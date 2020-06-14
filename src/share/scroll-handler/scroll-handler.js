@@ -30,7 +30,7 @@ export const useChangeWindowMode = () => {
     const handleResizeWindow = (isPortrait) => {
       setLandscapeMode(!isPortrait.matches);
     }
-    isPortrait.addEventListener('change', handleResizeWindow);
+    isPortrait.addListener(handleResizeWindow);
 
     return () => {
       isPortrait.removeListener(handleResizeWindow);

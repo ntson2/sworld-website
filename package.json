@@ -17,6 +17,7 @@
     "node-sass": "^4.14.1",
     "query-string": "^6.12.1",
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.5.0",
@@ -42,12 +43,16 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "safari 10",
+      "ios 9"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "safari 10",
+      "ios 9"
     ]
   }
 }

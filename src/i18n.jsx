@@ -38,15 +38,15 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_freddy_carrier: `Organizational advisor`,
                 sw_vy_le_carier: `Director of ESP Capital`,
                 sw_vy_le_decs: `Vy is currently the General Partner of ESP Capital, an early stage venture fund
-                with the mission to support tech startups companies in Vietnam and Southeast Asia. ESP aims to
-                invest in companies that can have potential to create profound impact to improve life quality and
-                effectively utilize technological innovations to disrupt the market, with the goal of becoming the a next unicorns in Asia.
-                Vy has developed her interest in Information Technology since her young age. At the age of 13, she founded TmSpeed Network,
+                with the mission to support tech startups in Vietnam and Southeast Asia. ESP aims to
+                invest in companies that have potential to create profound impact, improve life quality and
+                effectively utilize technological innovations to disrupt the market, with the goal of becoming the a next unicorn in Asia.
+                Vy has developed her interest in Information Technology since a young age. At the age of 13, she founded TmSpeed Network,
                 specialized in web designing and hosting trading. Her passion for entrepreneurship has empowered her to become
-                a dynamic businesswoman, who is highly committed to excellence and innovation. In 2009, Vy founded Chon.vn and
-                served as CEO, developing the website into one of the most popular online fashion shopping centers ecomerce platform in
+                an energetic businesswoman, who is highly committed to excellence and innovation. In 2009, Vy founded Chon.vn and
+                served as CEO, developing the site into one of the most popular fashion e-commerce platform in
                 Vietnam. From 2014 to 2017, she served as Managing Director of Adayroi.com, one of the leading e-commerce platforms in
-                Vietnam that offers more than 12 product categories and generates an annual GMV total sales of US $200+ million. 
+                Vietnam that offers more than 12 product categories and generates an annual total sales of US $200+ million. 
                 Vy graduated as a valedictorian from McDonough School of Business, Georgetown University in the United States.`,
                 sw_nguyen_viet_duc_carier: `CEO Succulents Box`,
                 sw_nguye_quoc_hung_carier: `CEO LogiGear Hoa Kỳ`,
@@ -55,13 +55,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_don_le_carier: `Co-Founder &CEO Everest Education`,
                 sw_address_label: 'Address',
 
-                sw_founder_decs: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum`,
-                sw_about_us_sologan: `We're more than a media team`,
+                sw_founder_decs: ``,
 
                 sw_service_production: `Producing`,
                 sw_services_connect_and_publishing: `PUBLISHING`,
@@ -73,7 +67,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_service_production_detail_2: `Digital products: Videos for digital news outlets and social media`,
                 sw_service_production_detail_3: `TVC, Viral, corporate stories, documentaries...`,
 
-                sw_service_connect_and_publishing_detail_header: `Optimizing media products and omnichannel publication: Broadcasting - Online News - Digital`,
+                sw_service_connect_and_publishing_detail_header: `Optimizing media products and multi-channel publication: Broadcasting - Online News - Digital`,
                 sw_service_connect_and_publishing_detail_1: `Broadcasting: VTV, VTC, VOV, HTV, THVL, LA34, ANTV...`,
                 sw_service_connect_and_publishing_detail_2: `Online News: Zingnews, Vnexpress, Kinh tế đô thị`,
                 sw_service_connect_and_publishing_detail_3: `S-World Channel: multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,

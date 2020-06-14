@@ -9,6 +9,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import styled from 'styled-components';
+import {useTranslation} from "react-i18next";
 
 const teamImg = process.env.PUBLIC_URL + '/img/sw_team.JPG';
 const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '100%', height: '100%'}, false);

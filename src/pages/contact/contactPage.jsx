@@ -88,7 +88,8 @@ function FeedbackForm() {
             };
 
             try {
-                const response = fetch('https://7m07mgufbb.execute-api.us-east-1.amazonaws.com/dev/items', requestOptions);
+                const url = process.env.BACKEND_ENPOINT;
+                const response = fetch(url + '/items', requestOptions);
                 setEmail('');
                 setPhone('');
                 setName('');

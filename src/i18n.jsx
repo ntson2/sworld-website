@@ -95,7 +95,26 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 contact_submit_error: "Error submitting the form. Please try again.",
                 contact_submit_success: "Your message has been sent. We will contact you shortly.",
                 close_button: "Close",
-                contact_title: "Send us a feedback"
+                contact_title: "Send us a feedback",
+
+                sw_our_story: `On a full moon early Summer day, S-World Multimedia was founded…
+
+                Dear our beloved partners,
+                
+                The journey embarks on the letter “S” with many meanings: “S” is the shape of Vietnam, a rare country that takes the shape of a Latin letter.  Covered by the East Sea and centered in the large Pacific Ocean, S – Viet is small yet remarkable on the world map, embracing the national pride in many Vietnamese souls.
+                
+                S is also the consonant that begins many sentimental yet familiar words: the symbol of Lotus (hoa Sen), of the Pearl of the Orient - Saigon, of the dear mother’s breast milk (Sữa mẹ), of the idyllic countryside (Sông quê), of the precious streams of slit (Phù Sa), enabling the growth of rice paddy fields and the civilization which followed, and a vital part of Vietnam: The Paracel Islands (Hoàng Sa) and Spratly Islands (Trường Sa).
+                
+                S is the first letter of Skyview, where you and I can stand on the tallest ground of Vietnam with the ambition of reaching new heights. Hence, Landmark 81 is where S-World Multimedia is based.
+                
+                S is also the first letter of the founder’s name – Ms. Soan, a difficult yet memorable name. Soan in Vietnamese stands for a simple delicate flower that blooms in white and purple, bearing lively and inspirational qualities. Ms. Soan had the opportunity to grow from the paddy fields, travel to the metropolitan city of Saigon and was destined to “travel the world” to fully understand “the small world”. At the age of 30, she embraced her “be myself” journey and wants to send out the message: The World is small if only we connect, new values will be created once we can grow closer by connecting with each other.
+                
+                S-W = Vietnam and the World: It’s the journey for Vietnam to step into the world with both distinctive and common values. After many decades, though the S-shaped country has gone through many historical milestones and challenges under the rising digital age, it still persists, persevers, and takes pride in itself matching with the world, together forming new values.
+                
+                Embracing connecting values and creating unique new values that derived from multimedia will be the path of S-World. Not only in Vietnam, but we will also bring the Vietnamese spirit and talents to step into the world confidently.
+                
+                Ho Chi Minh City, June 07th, 2020 (Lunar date: April 16, 2020)
+                `
             }
         },
         vn: {
@@ -185,7 +204,25 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 contact_submit_error: "Gửi bị lỗi. Xin vui lòng gửi lại.",
                 contact_submit_success: "Lời nhắn của bạn đã được gửi đi. Chúng tôi sẽ liên lạc trong thời gian sớm nhất.",
                 close_button: "Đóng",
-                contact_title: "Để lại lời nhắn"
+                contact_title: "Để lại lời nhắn",
+
+                sw_our_story: `Nhân một ngày trăng tròn khi đất trời giao mùa xuân hạ, S-World Multimedia được ra đời....{{ -myvar}}
+
+                Gửi lời chào đến thế giới!
+                
+                Chúng tôi bắt đầu hành trình bằng chữ S nhiều ý nghĩa:
+                
+                Đó là dáng hình Việt Nam - một trong những quốc gia hiếm hoi được trải mình trên 1 ký tự Latin duyên dáng. Được biển Đông rộng lớn - một dòng mạch của Thái Bình Dương bao la, ôm trọn và bao bọc. S - Việt tuy nhỏ nhắn, nhưng ấn tượng trên bản đồ thế giới, đã gieo trong trái tim mỗi người dân Việt niềm tự tôn dân tộc...
+                
+                Chữ S còn là thanh âm của những ý nghĩa thiêng liêng mà vô cùng gần gũi: của biểu tượng hoa Sen, của hòn ngọc viễn đông "Sài Gòn", của bầu Sữa ngọt ngào nơi mẹ nhân từ, đôn hậu; của hình ảnh gần gũi bình dị Sông quê; của dòng phù Sa màu mỡ nuôi dưỡng những cánh đồng lúa bát ngát, tạo nên nền văn minh lúa nước và của một phần máu thịt không thể tách rời tổ quốc Việt Nam: Hoàng Sa và Trường Sa.
+                
+                S là chữ cái bắt đầu của Skyview nơi tôi và bạn có thể đứng từ đỉnh cao toà nhà Việt Nam, để nhìn ra bầu trời cao rộng, ươm những khát vọng mới. Và Landmark 81 cũng là nơi S-world Multimedia đã được thành hình.
+                
+                Chữ S còn là tên của người sáng lập công ty - Soan - cái tên khó đọc mà dễ nhớ. Soan là tên một loài hoa bình dị, mong manh, nhẹ nhàng nhưng ấm áp trong 1 chùm sắc trắng và tím, đầy sức sống và giàu cảm hứng.  Soan đã may mắn được đi từ những phèn lầy của ruộng lúa, rồi hoà mình vào Sài Gòn hoa lệ và có được những cơ duyên bắt đầu hành trình "vòng quanh thế giới" để cảm nhận đủ đầy ý nghĩa "trái đất tròn". Tuổi 30, với hành trình "be MySelf" - S-world mong muốn gửi đến thông điệp: trái đất rất gần nếu chúng ta kết nối, những giá trị mới sẽ đến rất gần nếu chúng ta ngồi lại cùng nhau. 
+                
+                2. S-W = Việt Nam và thế giới: Đó là hành trình Việt Nam bước ra thế giới với những bản sắc riêng và tiếng nói chung cộng hưởng. Sau hàng thế kỷ, đất nước hình chữ S tuy nhỏ, tuy đi lên từ tro tàn và tuy trải qua nhiều thử thách trong làn sóng công nghệ như vũ bão, nhưng luôn bền bỉ, kiên cường, tự tôn để vươn mình sát cánh cùng thế giới, kiến tạo những giá trị mới.
+                
+                Và S-world mong muốn nhân những giá trị kết nối, để cùng kiến tạo những giá trị mới khác biệt từ multimedia. Khát vọng lớn hơn là mang tinh thần Việt, tự tin bước ra thế giới. `
             }
         }
     },

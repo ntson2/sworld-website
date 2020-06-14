@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import '../story/story.scss';
 import I18n from '../i18nComponent';
 import * as UTIL from '../../share/util/util';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import styled from 'styled-components';
 
 const teamImg = process.env.PUBLIC_URL + '/img/sw_team.JPG';
 const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '100%', height: '100%'}, false);
@@ -13,6 +20,33 @@ const quotesBottom = process.env.PUBLIC_URL + '/icon/sw-bottom-quotes.svg';
 const bottomQuotesStyle = UTIL.getBackgroundImgStyle(quotesBottom, { width: '3rem', height: '3rem'});
 
 const Story = () => {
+
+    const [open, setOpen] = useState(false);
+    const [scroll, setScroll] = useState('body');
+
+    const PopUpWrapper = styled.div`
+
+    `;
+
+    const handleClickOpen = (scrollType) => () => {
+        setOpen(true);
+        setScroll(scrollType);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const descriptionElementRef = useRef(null);
+    useEffect(() => {
+        if (open) {
+            const { current: descriptionElement } = descriptionElementRef;
+            if (descriptionElement !== null) {
+                descriptionElement.focus();
+            }
+        }
+    }, [open]);
+
     return (
         <div className="Story">
             <div className="sw-label-wrapper">
@@ -30,21 +64,37 @@ const Story = () => {
                 <div className="sw-story-quotes">
                     <div className="quotes">
                         <div className="sw-quotes-logo-top" style={topQuotesStyle}></div>
-                        Nhân một ngày trăng tròn khi đất trời giao mùa xuân hạ, S-World Multimedia được ra đời...
-                        <br />
-                        Gửi lời chào đến thế giới!
-                        <br />
-                        Chúng tôi bắt đầu hành trình bằng chữ S nhiều ý nghĩa: 
-                        <br />
-                        Đó là dáng hình Việt Nam - một trong những quốc gia hiếm hoi được trải mình trên 1 ký tự Latin duyên dáng.
-                        Được biển Đông rộng lớn - một dòng mạch của Thái Bình Dương bao la, ôm trọn và bao bọc.
-                        S - Việt tuy nhỏ nhắn, nhưng ấn tượng trên bản đồ thế giới, đã gieo trong trái tim mỗi người dân Việt niềm tự tôn dân tộc
-                        <br />
-                        Chữ S còn là thanh âm của những ý nghĩa thiêng liêng mà vô cùng gần gũi: 
-                        của biểu tượng hoa Sen, của hòn ngọc viễn đông "Sài Gòn"
+                        <div className="sw-quotes-text">
+                            <I18n text={"sw_our_story"} numWord={600}></I18n> ....
+                        </div>
                         <div className="sw-quotes-logo-bttom" style={bottomQuotesStyle}></div>
                     </div>
-                    <div className="sw-read-more-btn">Read more </div>
+                    <div onClick={handleClickOpen('body')} className="sw-read-more-btn">Read more </div>
+                    <PopUpWrapper>
+                        <Dialog
+                            open={open}
+                            onClose={handleClose}
+                            scroll={scroll}
+                            aria-labelledby="scroll-dialog-title"
+                            aria-describedby="scroll-dialog-description"
+                        >
+                            <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
+                            <DialogContent>
+                                <DialogContentText
+                                    id="scroll-dialog-description"
+                                    ref={descriptionElementRef}
+                                    tabIndex={-1}
+                                >
+                                    <I18n text={"sw_our_story"}></I18n>
+                                </DialogContentText>
+                            </DialogContent>
+                            <DialogActions>
+                            <Button onClick={handleClose} color="primary">
+                                Cancel
+                            </Button>
+                            </DialogActions>
+                        </Dialog>
+                    </PopUpWrapper>
                 </div>
             </div>
         </div>

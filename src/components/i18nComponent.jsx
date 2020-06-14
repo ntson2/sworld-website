@@ -4,7 +4,7 @@ import React from "react";
 function I18n(props) {
     const {t} = useTranslation();
 
-    return t(props.text);
+    return t(props.text).substring(0, props.numWord);
 }
 
 export default I18n;

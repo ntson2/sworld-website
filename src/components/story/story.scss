@@ -56,22 +56,8 @@
         .sw-bg-container {
             width: 95%;
             margin-bottom: 8rem;
-            --borderWidth: .5rem;
             background: #1D1F20;
             position: relative;
-            border-radius: var(--borderWidth);
-            &:after {
-                content: '';
-                position: absolute;
-                top: calc(-1 * var(--borderWidth));
-                left: calc(-1 * var(--borderWidth));
-                height: calc(100% + var(--borderWidth) * 2);
-                width: calc(100% + var(--borderWidth) * 2);
-                background: linear-gradient(#5073b8, #1098ad, #07b39b, #6fba82);
-                border-radius: calc(2 * var(--borderWidth));
-                z-index: -1;
-                background-size: 300% 300%;
-              }
               
             .sw-team-img {
                 display: flex;
@@ -125,6 +111,7 @@
                 color: #000000;
                 font-weight: 400;
                 font-family: 'Josefin Sans', sans-serif;
+                white-space: pre-line;
 
                 .sw-quotes-logo-top {
                     position: absolute;
@@ -174,4 +161,8 @@
             }
         }
     }
+}
+
+.MuiDialogTitle-root {
+    color: yellow;
 }

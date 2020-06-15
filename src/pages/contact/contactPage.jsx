@@ -88,7 +88,7 @@ function FeedbackForm() {
             };
 
             try {
-                const url = process.env.BACKEND_ENPOINT;
+                const url = process.env.BACKEND_ENDPOINT;
                 const response = fetch(url + '/items', requestOptions);
                 setEmail('');
                 setPhone('');

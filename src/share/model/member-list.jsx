@@ -41,10 +41,7 @@ const Listmember = [
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,
-        _decs: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. `
+        _decs: ``
     },
     {
         _id: 3,
@@ -92,10 +89,10 @@ const Listmember = [
     },
     {
         _id: 7,
-        _name: `ERIK JOSSON`,
+        _name: `ERIK JONSSON`,
         _img: `${mrErik}`,
         _role: `sw_entrepreneurial_advisor`,
-        _carier: 'sw_nguyen_viet_duc_carier',
+        _carier: 'sw_erik_jonsson_carier',
         _fbLink: `facebook.com`,
         _liLink: `facebook.com`,
         _twlink: `facebook.com`,

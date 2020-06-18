@@ -49,6 +49,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 Vietnam that offers more than 12 product categories and generates an annual total sales of US $200+ million. 
                 Vy graduated as a valedictorian from McDonough School of Business, Georgetown University in the United States.`,
                 sw_nguyen_viet_duc_carier: `CEO Succulents Box`,
+                sw_erik_jonsson_carier: `Strategic Initiatives Director`,
                 sw_nguye_quoc_hung_carier: `CEO LogiGear Hoa Kỳ`,
                 sw_gs_truong_carier: `French government's International Commerce Advisor`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,
@@ -156,6 +157,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 Forbes 30 under 30 của Việt Nam và Châu Á. Vy tốt nghiệp thủ khoa trường kinh doanh McDonough thuộc Đại học Georgetown,
                 Hoa Kỳ.`,
                 sw_nguyen_viet_duc_carier: `CEO Succulents Box`,
+                sw_erik_jonsson_carier: `Giám đốc sáng kiến chiến lược`,
                 sw_nguye_quoc_hung_carier: `Chủ tịch LogiGear Hoa Kỳ`,
                 sw_gs_truong_carier: `Cố vấn của Chính phủ Pháp về Thương mại quốc tế`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,

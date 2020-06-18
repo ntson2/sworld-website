@@ -64,20 +64,7 @@ const Header = () =>  {
     // Function toggle menu
     const toggleMenu = () => {
         burgerToggle(!burger);
-        if (!burger) {
-            disableScroll();
-        } else {
-            enableScroll();
-        }
     };
-
-    const disableScroll = () => { 
-        document.body.style.overflow = "hidden";
-    } 
-      
-    const enableScroll = () => { 
-        document.body.style.overflow = "unset";
-    }
 
     return (
         <div className={

@@ -59,12 +59,12 @@ const Header = () =>  {
             i18n.changeLanguage(CONSTANT.SW_LANGUAGE.EN);
             swIconStyle = UTIL.getBackgroundImgStyle(swLeftIcon, {width: '3rem', height: '3rem'}, false);   
         }
-    }
+    };
 
     // Function toggle menu
     const toggleMenu = () => {
         burgerToggle(!burger);
-    }
+    };
 
     return (
         <div className={

@@ -16,7 +16,7 @@
         
         .sw-main-label {
             position: relative;
-            font-family: $secondary-font;
+            font-family: $primary-font;
             font-size: 4rem;
             font-weight: 700;
             line-height: 4rem;
@@ -31,13 +31,13 @@
                 width: 25rem;
                 top: 25px;
                 left: -300px;
-                background: $fresh-red;
+                background: $blue-3;
             }
         }
 
         .sw-sub-label {
             font-family: $primary-font;
-            color: $fresh-red;
+            color: $blue-3;
             font-size: 1.7rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -140,24 +140,6 @@
     
             .sw-story-quotes {
                 width: 45%;
-            }
-        }
-    }
-}
-
-@include breakpoints(x-medium) {
-    .Story {
-        .sw-label-wrapper {
-            .sw-main-label {
-                &:after {
-                    position: absolute;
-                    content: "";
-                    height: 3px;
-                    width: 25rem;
-                    top: 25px;
-                    right: -300px;
-                    background: $fresh-red;
-                }
             }
         }
     }

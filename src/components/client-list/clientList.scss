@@ -22,20 +22,20 @@
         margin: .5rem 0;
 
         .sw-main-label {
-            font-family: $secondary-font;
+            // font-family: $primary-font;
             font-size: 4rem;
             font-weight: 700;
             line-height: 4rem;
             color: #ffffff;
             letter-spacing: -.1rem;
-            color: $fresh-red;
+            color: $blue-3;
 
             &:before {
                 position: absolute;
                 height: 6rem;
                 width: .3rem;
                 content: "";
-                background: $fresh-red;
+                background: $blue-3;
                 left: 50%;
                 top: -15rem;
             }

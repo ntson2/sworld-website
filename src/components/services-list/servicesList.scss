@@ -14,7 +14,7 @@
         height: 6rem;
         width: .3rem;
         content: "";
-        background: $fresh-red;
+        background: $blue-3;
         left: 50%;
         top: .1rem;
     }
@@ -22,12 +22,12 @@
     .sw-devider {
         margin: 1rem 0;
         padding: .2rem 0;
-        border-top: .3rem solid $fresh-red;
+        border-top: .3rem solid $blue-3;
         width: 8%;
     }
 
     .sw-service-list-label {
-        font-family: $secondary-font;
+        font-family: $primary-font;
         font-size: 4rem;
         font-weight: 700;
         line-height: 4rem;

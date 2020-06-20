@@ -1,6 +1,5 @@
 const bucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/AdvisorImage/'
 
-
 const Listmember = [
     {
         _id: 0,

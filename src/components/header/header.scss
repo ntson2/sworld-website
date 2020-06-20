@@ -2,7 +2,7 @@
 @import '../../../public/scss/variable.scss';
 
 .Header {
-    font-size: 2.0rem;
+    font-size: 1.4rem;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -11,6 +11,7 @@
     justify-content: space-between;
     z-index: 2;
     background: $white;
+    height: 10vh;
     position: sticky;
     top: 0;
     
@@ -25,7 +26,7 @@
             left: 0;
             bottom: 1.3rem;
             height: 2px;
-            background: #a07eb5;
+            background: $blue-1;
             opacity: 0;
             @include transition(all, .5);
         }
@@ -55,7 +56,7 @@
         background: #1b1a1a;
         opacity: 0.98;
         a {
-            font-family: Poppins;
+            font-family: SFUGillSans;
             color: #9b9b9b;
             padding: 1.5rem;
             font-size: 1.5rem;
@@ -74,7 +75,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height: 100%;
+        height: 90%;
         width: 40%;
         .sw-logo {
             width: 10rem;
@@ -102,7 +103,7 @@
                 margin: 0 1rem;
     
                 &:first-child {
-                    color: $fresh-red;
+                    color: $blue-3;
                 }
             }
         }
@@ -214,7 +215,7 @@
 
 @include breakpoints(large) {
     .Header {
-        min-height: 15vh;
+        min-height: 10vh;
         justify-content: center;
         text-align: center;
 
@@ -237,15 +238,15 @@
         .sw-full-nav {
             width: 60%;
             a {
-                font-family: $header-font;
-                color: #000000;
-                margin: 1.8rem;
+                font-family: $primary-font;
+                color: $blue-1;
+                margin: 1.4rem;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 500;
                 position: relative;
                 
                 &:after {
-                    background: #db2d2e;
+                    background: $blue-1;
                     bottom: -.3rem;
                 }
             }
@@ -260,6 +261,7 @@
             }
     
             .sw-nav-selected {
+                color: $blue-1;
                 &:after {
                     width: 100%;
                     opacity: 1;
@@ -269,13 +271,14 @@
     }
 }
 
-.big-height {
-    height: 20vh;
-    // position: fixed;
-}
-
-.small-height {
-    height: 10vh;
+@include breakpoints(x-large) {
+    .Header {
+        .sw-logo-wrapper {
+            .sw-logo {
+                width: 30%;
+            }
+        }
+    }
 }
 
 .visible {

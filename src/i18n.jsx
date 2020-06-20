@@ -58,6 +58,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_address_label: 'Address',
 
                 sw_founder_decs: ``,
+                sw_about_us_sologan: `Sologan`,
 
                 sw_service_production: `Producing`,
                 sw_services_connect_and_publishing: `PUBLISHING`,
@@ -72,7 +73,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_service_connect_and_publishing_detail_header: `Optimizing media products and multi-channel publication: Broadcasting - Online News - Digital`,
                 sw_service_connect_and_publishing_detail_1: `Broadcasting: VTV, VTC, VOV, HTV, THVL, LA34, ANTV...`,
                 sw_service_connect_and_publishing_detail_2: `Online News: Zingnews, Vnexpress, Kinh tế đô thị`,
-                sw_service_connect_and_publishing_detail_3: `S-World Channel: multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
+                sw_service_connect_and_publishing_detail_3: `S-World Channel: Multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
                 sw_service_connect_and_publishing_detail_4: `Out-of-home (OOH) Advertising: Airport, elevators, public transportation...`,
 
                 sw_service_international_connect_detail_1: `Connecting foreign entities, partners, businesses that wish to come to Vietnam for investments and event hosting.`,
@@ -183,7 +184,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_service_connect_and_publishing_detail_header: `Tối ưu hoá sản phẩm và phát hành đa kênh: Truyền hình - Báo điện tử - Digital`,
                 sw_service_connect_and_publishing_detail_1: `Truyền hình: VTV, VTC, VOV, HTV, THVL, LA34, ANTV...`,
                 sw_service_connect_and_publishing_detail_2: `Online News: Zingnews, Vnexpress, Kinh tế đô thị`,
-                sw_service_connect_and_publishing_detail_3: `S-World Channel: multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
+                sw_service_connect_and_publishing_detail_3: `S-World Channel: Multichannel Facebook, Youtube, Instagram, Google Ad, LinkedIn...`,
                 sw_service_connect_and_publishing_detail_4: `Quảng cáo OOH (Out-of-home advertising): Sân bay, thang máy, phương tiện giao thông…`,
 
                 sw_service_international_connect_detail_1: `Kết nối các công ty, các đơn vị, cá nhân nước ngoài muốn đến Việt Nam đầu tư, khám phá, tổ chức sự kiện`,

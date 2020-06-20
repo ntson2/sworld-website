@@ -23,7 +23,7 @@
             width: 100%;
             .sw-member-list-label {
                 text-align: left;
-                font-family: $secondary-font;
+                font-family: $primary-font;
                 font-size: 5rem;
                 font-weight: 700;
                 line-height: 4rem;
@@ -34,7 +34,7 @@
         
             .sw-member-list-sub-label {
                 font-family: $primary-font;
-                color: $fresh-red;
+                color: $blue-3;
                 font-size: 1.7rem;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -45,7 +45,7 @@
 
         .sw-devider {
             width: 10%;
-            border-bottom: 3px solid $fresh-red;
+            border-bottom: 3px solid $blue-3;
         }
 
     }
@@ -63,7 +63,7 @@
         .main-label {
             
             text-align: left;
-            font-family: $secondary-font;
+            font-family: $primary-font;
             font-size: 5rem;
             font-weight: 700;
             line-height: 4rem;
@@ -75,7 +75,7 @@
 
         .sub-label {
             font-family: $primary-font;
-            color: $fresh-red;
+            color: $blue-3;
             font-size: 1.7rem;
             font-weight: 700;
             text-transform: uppercase;

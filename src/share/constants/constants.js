@@ -9,7 +9,7 @@ export const SW_INFOR = {
     HOTLINE: `(+84) 817 701 604`,
     EMAIL: `info@s-worldmedia.com`,
     ADDRESS: `Tầng 31, Landmark 81
-    208 Nguyễn Hữu Cảnh, phường 22, Bình Thạnh, TPHCM`
+    720A Điện Biên Phủ, phường 22, Bình Thạnh, TPHCM`
 }
 
 // Label constant

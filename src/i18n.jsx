@@ -54,6 +54,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_gs_truong_carier: `French government's International Commerce Advisor`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,
                 sw_don_le_carier: `Co-Founder &CEO Everest Education`,
+                sw_erik_josson_carier: `Strategic Initiatives Director`,
                 sw_address_label: 'Address',
 
                 sw_founder_decs: ``,
@@ -162,6 +163,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
                 sw_gs_truong_carier: `Cố vấn của Chính phủ Pháp về Thương mại quốc tế`,
                 sw_gs_phuc_carier: `CEO Metran Japan`,
                 sw_don_le_carier: `Co-Founder &CEO Everest Education`,
+                sw_erik_josson_carier: `Giám đốc sáng kiến chiến lược`,
                 sw_address_label: 'Địa chỉ',
                 sw_founder_decs: `Tôi sinh ra ở huyện miền núi biên giới Hương Sơn - Hà Tĩnh.
                 Tuổi thơ của tôi gắn với cánh đồng. Tôi chăn trâu, cắt cỏ và gặt lúa.

@@ -7,15 +7,19 @@ import * as _ from 'lodash';
 const Member = (props) => {
 
     const memberData = _.cloneDeep(props.dataMember);
-    const memberImg = UTIL.getBackgroundImgStyle(memberData._img, {}, false);
-    const memberAvatar = UTIL.getBackgroundImgStyle(memberData._img, {}, false);
+    // const memberImg = UTIL.getBackgroundImgStyle(memberData._img, {}, false);
+    // const memberAvatar = UTIL.getBackgroundImgStyle(memberData._img, {}, false);
 
     const firstListStyle = props.isFirstlist ? true : false;
 
     return (
         <div className="Member">
             <div className="sw-member-genaral">
-                <div className="sw-member-img" style={memberImg}></div>
+                <img
+                    className="sw-member-img"
+                    src={memberData._img}
+                    alt={memberData._imgAlt}
+                />
                 <h2>{<I18n text={memberData._name}/>}</h2>
                 <span className="sw_carier">{<I18n text={memberData._carier}/>}</span>
                 <span>{<I18n text={memberData._role}/>}</span>
@@ -26,7 +30,11 @@ const Member = (props) => {
                 <a href={memberData._twlink}><i className="fa fa-twitter"></i></a>
             </div>
             <div className="sw-member-detail">
-                <div className="sw-member-img-avatar" style={memberAvatar}></div>
+                <img
+                    className="sw-member-img-avatar"
+                    src={memberData._img}
+                    alt={memberData._imgAlt}
+                />
                 <div className="sw-member-infor">
                     <h2>{<I18n text={memberData._name}/>}</h2>
                     <span>{<I18n text={memberData._role}/>}</span>

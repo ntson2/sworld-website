@@ -64,7 +64,20 @@ const Header = () =>  {
     // Function toggle menu
     const toggleMenu = () => {
         burgerToggle(!burger);
+        if (!burger) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
     };
+
+    const disableScroll = () => { 
+        document.body.style.overflow = "hidden";
+    } 
+      
+    const enableScroll = () => { 
+        document.body.style.overflow = "unset";
+    }
 
     return (
         <div className={
@@ -80,21 +93,20 @@ const Header = () =>  {
             </div>
             <div
                 className={isLargeScreen ? 'sw-full-nav' : burger ? 'sw-burger-active' : 'sw-burger'}
-                onClick={burger ? toggleMenu : undefined}
             >
-                <NavLink to="/home" activeClassName="sw-nav-selected">
+                <NavLink onClick={burger ? toggleMenu : undefined} to="/home" activeClassName="sw-nav-selected">
                     {<I18n text={"home_tab"} />}
                 </NavLink>
-                <NavLink to="/products" activeClassName="sw-nav-selected">
+                <NavLink onClick={burger ? toggleMenu : undefined} to="/products" activeClassName="sw-nav-selected">
                     {<I18n text={"products_tab"} />}
                 </NavLink>
-                <NavLink to="/forum" activeClassName="sw-nav-selected">
+                <NavLink onClick={burger ? toggleMenu : undefined} to="/forum" activeClassName="sw-nav-selected">
                     {<I18n text={"forum_tab"} />}
                 </NavLink>
-                <NavLink to="/about" activeClassName="sw-nav-selected">
+                <NavLink onClick={burger ? toggleMenu : undefined} to="/about" activeClassName="sw-nav-selected">
                     {<I18n text={"about_tab"} />}
                 </NavLink>
-                <NavLink to="contact" activeClassName="sw-nav-selected">
+                <NavLink onClick={burger ? toggleMenu : undefined} to="contact" activeClassName="sw-nav-selected">
                     {<I18n text={"contact_tab"} />}
                 </NavLink>
             </div>

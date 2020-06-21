@@ -60,15 +60,15 @@ const ScrollTopArrow = () => {
   window.addEventListener('scroll', checkScrollTop);
 
   const scrollBtnStyleinline = {
-      height: 50,
-      width: 50,
+      height: 35,
+      width: 35,
       display: showScroll ? 'flex' : 'none',
       position: 'fixed',
-      bottom: 30,
-      right: 30,
+      bottom: 10,
+      right: 10,
       opacity: 0.9,
       zIndex: 10,
-      color: '#e9204f',
+      color: '#6699ff',
       '&:hover': {
           opacity: 1
       }

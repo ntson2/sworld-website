@@ -1,18 +1,19 @@
 import React from 'react';
-import * as UTIL from'../../share/util/util';
 import '../founder/founder.scss';
 import I18n from '../i18nComponent';
 import * as _ from 'lodash';
 
-
 const Founder = (props) => {
     const founderData = _.cloneDeep(props);
-    const founderImg = UTIL.getBackgroundImgStyle(founderData._img, {width: '100%', height: '100%'}, false);
 
     return (
         <div className="Founder">
             <div className="sw-img-wrapper">
-                <div className="sw-founder-img" style={founderImg}></div>
+                <img
+                    className="sw-founder-img"
+                    src={founderData._img}
+                    alt={founderData._alt}
+                />
             </div>
             <div className="sw-founder-infor">
                 <div className="founder-header">

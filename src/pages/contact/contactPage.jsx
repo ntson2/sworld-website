@@ -88,7 +88,8 @@ function FeedbackForm() {
             };
 
             try {
-                const url = process.env.BACKEND_ENDPOINT;
+                const url = 'https://qpntkzyurc.execute-api.us-east-1.amazonaws.com/prod';
+                    //process.env.BACKEND_ENDPOINT;
                 const response = fetch(url + '/items', requestOptions);
                 setEmail('');
                 setPhone('');

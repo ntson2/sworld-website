@@ -1,17 +1,10 @@
-const produceIconRed = process.env.PUBLIC_URL + '/icon/sw-produce-red.svg';
-const produceIconWhite = process.env.PUBLIC_URL + '/icon/sw-produce-white.svg';
-const publishingWhite = process.env.PUBLIC_URL + '/icon/sw-publishing-white.svg';
-const publishingRed = process.env.PUBLIC_URL + '/icon/sw-publishing-red.svg';
-const connectWhite = process.env.PUBLIC_URL + '/icon/sw-connect-white.svg';
-const connectRed = process.env.PUBLIC_URL + '/icon/sw-connect-red.svg';
-const eventWhite = process.env.PUBLIC_URL + '/icon/sw-event-white.svg';
-const eventRed = process.env.PUBLIC_URL + '/icon/sw-event-red.svg';
-
+const bucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/Products/';
 
 const ServicesList = [
     {
         _id: 0,
         _name: 'sw_service_production',
+        _img: `${bucketUrl}sanXuat.jpg`,
         _decs: [
             {
                 _id: 0,
@@ -26,10 +19,10 @@ const ServicesList = [
                 _text: `sw_service_production_detail_3`
             }
         ],
-        _icon: [produceIconRed, produceIconWhite],
     },
     {
         _id: 1,
+        _img: `${bucketUrl}phatHanh.jpg`,
         _name: 'sw_services_connect_and_publishing',
         _decs: [
             {
@@ -45,10 +38,10 @@ const ServicesList = [
                 _text: `sw_service_connect_and_publishing_detail_3`
             }
         ],
-        _icon: [publishingRed, publishingWhite],
     },
     {
         _id: 2,
+        _img: `${bucketUrl}ketNoi.jpg`,
         _name: 'sw_service_international_connect',
         _decs: [
             {
@@ -60,10 +53,10 @@ const ServicesList = [
                 _text: `sw_service_international_connect_detail_2`
             },
         ],
-        _icon: [connectRed, connectWhite]
     },
     {
         _id: 3,
+        _img: `${bucketUrl}suKien.jpg`,
         _name: 'sw_service_event',
         _decs: [
             {
@@ -83,7 +76,6 @@ const ServicesList = [
                 _text: `sw_service_event_detail_4`
             },
         ],
-        _icon: [eventRed, eventWhite]
     }
 ]
 

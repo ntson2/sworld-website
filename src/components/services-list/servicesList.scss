@@ -2,64 +2,48 @@
 @import '../../../public/scss/mixins.scss';
 
 .ServicesList {
+    color: $primary-color;
     position: relative;
     margin-top: 5rem;
-    width: 92%;
+    width: 95%;
     min-height: 50rem;
     margin: 0 auto;
-    padding-top: 6rem;
-
-    &:before {
-        position: absolute;
-        height: 6rem;
-        width: .3rem;
-        content: "";
-        background: $blue-3;
-        left: 50%;
-        top: .1rem;
-    }
-
-    .sw-devider {
-        margin: 1rem 0;
-        padding: .2rem 0;
-        border-top: .3rem solid $blue-3;
-        width: 8%;
-    }
+    padding-top: 4rem;
 
     .sw-service-list-label {
         font-family: $primary-font;
         font-size: 4rem;
         font-weight: 700;
         line-height: 4rem;
-        color: #000000;
         letter-spacing: -.1rem;
         margin-bottom: .5rem;
     }
 
     .sw-service-list-sub-label {
         font-family: $primary-font;
-        color: #e9204f;
         font-size: 1.7rem;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 2rem;
         letter-spacing: -.1rem;
+
+        span {
+            text-align: center;
+            font-style: italic;
+        }
     }
 
     .service-wrapper {
-        padding-top: 3.5rem;
+        padding-top: 1.5rem;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
 @include breakpoints (x-small) {
     .ServicesList {
         padding-top: 8rem;
-        .sw-service-list-label, .sw-service-list-sub-label {
-            width: 86%;
-            margin: 0 auto;
-        }
 
         .sw-devider {
             display: none;
@@ -70,9 +54,6 @@
 @include breakpoints (x-medium) {
     .ServicesList {
         padding-top: 12rem;
-        .sw-service-list-label, .sw-service-list-sub-label {
-            width: 96%;
-        }
     }
 }
 

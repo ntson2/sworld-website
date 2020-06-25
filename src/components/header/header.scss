@@ -3,6 +3,7 @@
 
 .Header {
     font-size: 1.4rem;
+    color: $primary-color;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -11,7 +12,7 @@
     justify-content: space-between;
     z-index: 2;
     background: $white;
-    height: 70px;
+    height: 90px;
     position: sticky;
     top: 0;
     
@@ -26,7 +27,7 @@
             left: 0;
             bottom: 1.3rem;
             height: 2px;
-            background: $blue-1;
+            background: $secondary-color;
             opacity: 0;
             @include transition(all, .5);
         }
@@ -101,10 +102,6 @@
             span {
                 font-size: 1.5rem;
                 margin: 0 1rem;
-    
-                &:first-child {
-                    color: $blue-3;
-                }
             }
         }
 
@@ -215,7 +212,6 @@
 
 @include breakpoints(large) {
     .Header {
-        min-height: 10vh;
         justify-content: center;
         text-align: center;
 
@@ -239,14 +235,13 @@
             width: 60%;
             a {
                 font-family: $primary-font;
-                color: $blue-1;
+                color: $primary-color;
                 margin: 1.4rem;
                 text-transform: uppercase;
                 font-weight: 500;
                 position: relative;
                 
                 &:after {
-                    background: $blue-1;
                     bottom: -.3rem;
                 }
             }
@@ -261,7 +256,7 @@
             }
     
             .sw-nav-selected {
-                color: $blue-1;
+                color: $secondary-color;
                 &:after {
                     width: 100%;
                     opacity: 1;

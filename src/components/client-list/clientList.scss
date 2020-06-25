@@ -29,16 +29,6 @@
             color: #ffffff;
             letter-spacing: -.1rem;
             color: $blue-3;
-
-            &:before {
-                position: absolute;
-                height: 6rem;
-                width: .3rem;
-                content: "";
-                background: $blue-3;
-                left: 50%;
-                top: -15rem;
-            }
         }
         
         .sw-sub-label {

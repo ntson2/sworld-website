@@ -11,8 +11,11 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import styled from 'styled-components';
 import {useTranslation} from "react-i18next";
 
-const teamImg = process.env.PUBLIC_URL + '/img/sw_team.JPG';
-const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '100%', height: '100%'}, false);
+// const teamImg = process.env.PUBLIC_URL + '/img/sw_team.JPG';
+// const teamImgStyle = UTIL.getBackgroundImgStyle(teamImg, { width: '100%', height: '100%'}, false);
+
+const teamImg = process.env.PUBLIC_URL + '/img/sw-team.jpg';
+const imgTeamStyle = UTIL.getBackgroundImgStyle(teamImg);
 
 const quotesTop = process.env.PUBLIC_URL + '/icon/sw-top-quotes.svg';
 const topQuotesStyle = UTIL.getBackgroundImgStyle(quotesTop, { width: '3rem', height: '3rem'});
@@ -60,7 +63,7 @@ const Story = () => {
             </div>
             <div className="sw-story-container">
                 <div className="sw-bg-container">
-                    <div className="sw-team-img" style={teamImgStyle}></div>
+                    <div className="sw-team-img" style={imgTeamStyle}></div>
                 </div>
                 <div className="sw-story-quotes">
                     <div className="quotes">

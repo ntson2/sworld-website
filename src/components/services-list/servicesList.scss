@@ -10,28 +10,31 @@
     margin: 0 auto;
     padding-top: 4rem;
 
-    .sw-service-list-label {
-        font-family: $primary-font;
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 4rem;
-        letter-spacing: -.1rem;
-        margin-bottom: .5rem;
-    }
-
-    .sw-service-list-sub-label {
-        font-family: $primary-font;
-        font-size: 1.7rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 2rem;
-        letter-spacing: -.1rem;
-
-        span {
-            text-align: center;
-            font-style: italic;
+    .sw-service-list-label-wrapper {
+        .sw-service-list-label {
+            font-family: $primary-font;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 4rem;
+            letter-spacing: -.1rem;
+            margin-bottom: .5rem;
+        }
+    
+        .sw-service-list-sub-label {
+            font-family: $primary-font;
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 2rem;
+            letter-spacing: -.1rem;
+    
+            span {
+                text-align: center;
+                font-style: italic;
+            }
         }
     }
+
 
     .service-wrapper {
         padding-top: 1.5rem;
@@ -60,8 +63,9 @@
 @include breakpoints (x-large) {
     .ServicesList {
         padding-top: 14rem;
-        .sw-service-list-label, .sw-service-list-sub-label {
-            width: 100%;
+        
+        .sw-service-list-label-wrapper {
+            margin-bottom: 5rem;
         }
 
         .sw-devider {

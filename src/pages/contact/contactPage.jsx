@@ -1,4 +1,5 @@
 import React, {useCallback, useState} from "react";
+import "@shopify/polaris/styles.css";
 import {AppProvider, Button, Form, FormLayout, Frame, Modal, Page, TextContainer, TextField} from "@shopify/polaris";
 import I18n from "../../components/i18nComponent";
 import {useTranslation} from "react-i18next";

@@ -4,7 +4,7 @@ import "./footer.scss"
 import * as UTIL from '../../share/util/util';
 import I18n from "../i18nComponent";
 
-const backgroundFooter = 'https://sworldmedia-website.s3.amazonaws.com/image/Others/footerImg.jpg';
+const backgroundFooter = 'https://sworldmedia-website.s3.amazonaws.com/image/Others/smallFooter.jpg';
 const backgroundFooterStyle = UTIL.getBackgroundImgStyle(backgroundFooter, {width: '100%', height: '100%'}, false);
 
 const FooterPage = () => {

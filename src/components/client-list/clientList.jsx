@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Clients from '../../share/model/client-list';
 import '../../components/client-list/clientList.scss';
 import I18n from '../i18nComponent';
@@ -170,6 +170,15 @@ import I18n from '../i18nComponent';
 // ;
 
 const ClientList = () => {
+
+    const [hoverState, setHoverState] = useState(false);
+    const [currClient, setCurrItemHovered] = useState(null);
+
+    const onHoverClient = (stateHover, currClient) => {
+        setHoverState(stateHover);
+        setCurrItemHovered(currClient);
+    }
+
     return (
         <div className="ClientList">
             <div className="sw-label-wrapper">
@@ -178,8 +187,15 @@ const ClientList = () => {
             </div>
                 <div className="sw-client-list">
                     {Clients.map(clientImg =>
-                        <div className="sw-client-img-wrapper">
-                            <img src={clientImg._img} alt={clientImg._name} />
+                        <div
+                            className="sw-client-img-wrapper"
+                            onMouseEnter={() => onHoverClient(true, clientImg)}    
+                            onMouseLeave={() => onHoverClient(false, clientImg)}
+                        >
+                            <img
+                                src={hoverState && currClient === clientImg ?  clientImg._img : clientImg._greyImg}
+                                alt={clientImg._name}
+                            />
                         </div>
                     )}
                 </div>

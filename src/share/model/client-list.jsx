@@ -1,10 +1,6 @@
 const bucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/Clients/';
+const greyBucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/GreyClients/';
 
-const vtcLogo = `${bucketUrl}VTC.jpg`;
-const htvLogo = `${bucketUrl}HTV.jpg`;
-const forbesLogo = `${bucketUrl}FORBES.jpg`;
-const vnexpressLogo = `${bucketUrl}VNEXPRESS.jpg`;
-const zingLogo = `${bucketUrl}ZING.jpg`;
 const vtvLogo = `${bucketUrl}VTV.jpg`;
 const vovLogo = `${bucketUrl}VOV.jpg`;
 const metranLogo = `${bucketUrl}METRAN.jpg`;
@@ -20,67 +16,83 @@ const logigearLogo = `${bucketUrl}LOGIGEAR.jpg`;
 const Clients = [
     {
         _name: `VTC`,
-        _img: vtcLogo
+        _img: `${bucketUrl}VTC.jpg`,
+        _greyImg: `${greyBucketUrl}VTC.jpg`,
     },
     {
         _name: `HTV`,
-        _img: htvLogo
+        _img: `${bucketUrl}HTV.jpg`,
+        _greyImg: `${greyBucketUrl}HTV.jpg`,
     },
     {
         _name: `Forbes`,
-        _img: forbesLogo
+        _img: `${bucketUrl}FORBES.jpg`,
+        _greyImg: `${greyBucketUrl}FORBES.jpg`,
     },
     {
         _name: `VnExpress`,
-        _img: vnexpressLogo
+        _img: `${bucketUrl}VNEXPRESS.jpg`,
+        _greyImg: `${greyBucketUrl}VNEXPRESS.jpg`,
     },
     {
         _name: `Zing`,
-        _img: zingLogo
+        _img: `${bucketUrl}ZING.jpg`,
+        _greyImg: `${greyBucketUrl}ZING.jpg`,
     },
     {
         _name: `VTV`,
-        _img: vtvLogo
+        _img: `${bucketUrl}VTV.jpg`,
+        _greyImg: `${greyBucketUrl}VTV.jpg`,
     },
     {
         _name: `VOV`,
-        _img: vovLogo
+        _img: `${bucketUrl}VOV.jpg`,
+        _greyImg: `${greyBucketUrl}VOV.jpg`,
     },
     {
         _name: 'Logigear',
-        _img: logigearLogo
+        _img: `${bucketUrl}LOGIGEAR.jpg`,
+        _greyImg: `${greyBucketUrl}LOGIGEAR.jpg`,
     },
     {
         _name: 'Metran',
-        _img: metranLogo
+        _img: `${bucketUrl}METRAN.jpg`,
+        _greyImg: `${greyBucketUrl}METRAN.jpg`,
     },
     {
         _name: 'Succulen',
-        _img: succulenLogo
+        _img: `${bucketUrl}SUCCULEN.jpg`,
+        _greyImg: `${greyBucketUrl}SUCCULEN.jpg`,
     },
     {
         _name: 'LA34',
-        _img: la34Logo
+        _img: `${bucketUrl}LA34.jpg`,
+        _greyImg: `${greyBucketUrl}LA34.jpg`,
     },
     {
         _name: 'Kinh te do thi',
-        _img: ktdtLogo
+        _img: `${bucketUrl}KTDT.jpg`,
+        _greyImg: `${greyBucketUrl}KTDT.jpg`,
     },
     {
         _name: 'FBNC',
-        _img: fbncLogo
+        _img: `${bucketUrl}FBNC.jpg`,
+        _greyImg: `${greyBucketUrl}FBNC.jpg`,
     },
     {
         _name: 'Everest',
-        _img: everesLogo
+        _img: `${bucketUrl}EVEREST.jpg`,
+        _greyImg: `${greyBucketUrl}EVEREST.jpg`,
     },
     {
         _name: 'ANTV',
-        _img: antvLogo
+        _img: `${bucketUrl}ANTV.jpg`,
+        _greyImg: `${greyBucketUrl}ANTV.jpg`,
     },
     {
         _name: 'THVL',
-        _img: thvlLogo
+        _img: `${bucketUrl}THVL.jpg`,
+        _greyImg: `${greyBucketUrl}THVL.jpg`,
     },
 ]
 

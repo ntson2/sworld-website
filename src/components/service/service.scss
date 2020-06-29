@@ -118,13 +118,13 @@
     }
 }
 
-@include breakpoints (medium) {
+@include breakpoints (639px) {
     .Service {
         width: calc(50% - 10px);
     }
 }
 
-@include breakpoints (x-large) {
+@include breakpoints (1023px) {
     .Service {
         width: calc(25% - 10px);
     }

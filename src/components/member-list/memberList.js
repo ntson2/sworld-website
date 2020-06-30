@@ -20,7 +20,6 @@ const MemberList = () => {
                     <div className="sw-member-list-label"><I18n text={"our_member"}/>.</div>
                     <div className="sw-member-list-sub-label"><I18n text={"sw_about_us_sologan"}/></div>
                 </div>
-                <div className="sw-devider"></div>
             </div>
             <Founder {...founder[0]}/> 
 

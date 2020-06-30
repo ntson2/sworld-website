@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     html,
     body,
     button{
-        font-family:-apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        font-family: SFUGillSans;
     }
   
     html {

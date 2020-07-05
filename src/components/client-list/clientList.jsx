@@ -171,29 +171,30 @@ import I18n from '../i18nComponent';
 
 const ClientList = () => {
 
-    const [hoverState, setHoverState] = useState(false);
-    const [currClient, setCurrItemHovered] = useState(null);
+    // const [hoverState, setHoverState] = useState(false);
+    // const [currClient, setCurrItemHovered] = useState(null);
 
-    const onHoverClient = (stateHover, currClient) => {
-        setHoverState(stateHover);
-        setCurrItemHovered(currClient);
-    }
+    // const onHoverClient = (stateHover, currClient) => {
+    //     setHoverState(stateHover);
+    //     setCurrItemHovered(currClient);
+    // }
 
     return (
         <div className="ClientList">
             <div className="sw-label-wrapper">
                 <div className="sw-main-label"><I18n text={"our_partner"}/></div>
                 <div className="sw-sub-label">From all over the world</div>
+                <span className="sw-divider"></span>
             </div>
                 <div className="sw-client-list">
                     {Clients.map(clientImg =>
                         <div
                             className="sw-client-img-wrapper"
-                            onMouseEnter={() => onHoverClient(true, clientImg)}    
-                            onMouseLeave={() => onHoverClient(false, clientImg)}
+                            // onMouseEnter={() => onHoverClient(true, clientImg)}    
+                            // onMouseLeave={() => onHoverClient(false, clientImg)}
                         >
                             <img
-                                src={hoverState && currClient === clientImg ?  clientImg._img : clientImg._greyImg}
+                                src={clientImg._greyImg}
                                 alt={clientImg._name}
                             />
                         </div>

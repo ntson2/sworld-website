@@ -4,13 +4,12 @@ import "./footer.scss"
 import * as UTIL from '../../share/util/util';
 import I18n from "../i18nComponent";
 
-const backgroundFooter = 'https://sworldmedia-website.s3.amazonaws.com/image/Others/smallFooter.jpg';
-const backgroundFooterStyle = UTIL.getBackgroundImgStyle(backgroundFooter, {width: '100%', height: '100%'}, false);
+const footerImg = 'https://sworldmedia-website.s3.amazonaws.com/image/Others/footerImg.jpg';
 
 const FooterPage = () => {
     return (
         <div className="Footer">
-            <div className="sw-footer-background-img" style={backgroundFooterStyle}></div>
+            <img className="sw-footer-background-img" src={footerImg} />
             <div className="sw-footer-overlay">
                 <div className="sw-contact">
                     <div className="sw-hotline">Hotline: { CONSTANTS.SW_INFOR.HOTLINE }</div>

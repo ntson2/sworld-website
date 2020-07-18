@@ -73,6 +73,42 @@ const GlobalStyle = createGlobalStyle`
     [type='submit']::-moz-focus-inner {
         border-style:none;
     }
+
+    .sw-label-wrapper {
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        .sw-main-label {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 4rem;
+            letter-spacing: -.1rem;
+            text-transform: uppercase;
+        }
+        
+        .sw-sub-label {
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 2rem;
+            letter-spacing: -.1rem;
+            margin: 1rem 0;
+        }
+
+        .sw-divider {
+            width: 30%;
+            height: .4rem;
+            background: #51bbf8;
+        }
+    }
   
 
     @font-face {

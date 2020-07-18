@@ -32,7 +32,7 @@ const VideoBackground = () => {
                 <div className="button-muted" onClick={onToggeMuted} style={muted ? speakerStyle : mutedStyle}></div>
             </div>
             <video id="vd" autoPlay="autoplay" muted={muted} loop="loop">
-                <source src="http://d3bn04cfkvfiq9.cloudfront.net/video-background/SHOWREEL.mp4" type="video/mp4" />
+                <source src="https://sworldmedia-website.s3.amazonaws.com/video-background/vd-background.mp4" type="video/mp4" />
             </video>
         </div>
     )

@@ -10,28 +10,6 @@
     margin: 0 auto;
     padding-top: 4rem;
 
-    .sw-service-list-label-wrapper {
-        text-align: center;
-        .sw-service-list-label {
-            font-family: $primary-font;
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 4rem;
-            letter-spacing: -.1rem;
-            margin-bottom: .5rem;
-        }
-    
-        .sw-service-list-sub-label {
-            font-family: $primary-font;
-            font-size: 1.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 2rem;
-            letter-spacing: -.1rem;
-        }
-    }
-
-
     .service-wrapper {
         padding-top: 1.5rem;
         display: flex;
@@ -66,6 +44,16 @@
 
         .sw-devider {
             display: block;
+        }
+    }
+}
+
+@include breakpoints (1199px) {
+    .ServicesList {
+        .sw-label-wrapper {
+            .sw-divider {
+                width: 10%;
+            }
         }
     }
 }

@@ -60,6 +60,7 @@ const Story = () => {
                 <div className="sw-sub-label">
                     {<I18n text={"sw_our_story_sub_label"}/> }
                 </div>
+                <span className="sw-divider"></span>
             </div>
             <div className="sw-story-container">
                 <div className="sw-bg-container">

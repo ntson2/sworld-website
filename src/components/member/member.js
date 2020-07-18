@@ -14,32 +14,22 @@ const Member = (props) => {
 
     return (
         <div className="Member">
-            <div className="sw-member-genaral">
-                <img
-                    className="sw-member-img"
-                    src={memberData._img}
-                    alt={memberData._imgAlt}
-                />
-                <h2>{<I18n text={memberData._name}/>}</h2>
-                <span className="sw_carier">{<I18n text={memberData._carier}/>}</span>
-                <span>{<I18n text={memberData._role}/>}</span>
-            </div>
-            <div className="sw-member-social">
-                <a href={memberData._fbLink}><i className="fa fa-facebook"></i></a>
-                <a href={memberData._liLink}><i className="fa fa-linkedin"></i></a>
-                <a href={memberData._twlink}><i className="fa fa-twitter"></i></a>
-            </div>
-            <div className="sw-member-detail">
-                <img
-                    className="sw-member-img-avatar"
-                    src={memberData._img}
-                    alt={memberData._imgAlt}
-                />
+            <img
+                className="sw-member-img"
+                src={memberData._img}
+                alt={memberData._imgAlt}
+            />
+            <div className="sw-advisor-overlay-content">
                 <div className="sw-member-infor">
                     <h2>{<I18n text={memberData._name}/>}</h2>
                     <span>{<I18n text={memberData._role}/>}</span>
+                    {/* <p>{<I18n text={memberData._decs}/>}</p> */}
                 </div>
-                <p>{<I18n text={memberData._decs}/>}</p>
+                <div className="sw-member-social">
+                    <a href={memberData._fbLink}><i className="fa fa-facebook"></i></a>
+                    <a href={memberData._liLink}><i className="fa fa-linkedin"></i></a>
+                    <a href={memberData._twlink}><i className="fa fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     )

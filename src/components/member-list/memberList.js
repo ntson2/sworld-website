@@ -17,19 +17,21 @@ const MemberList = () => {
         <div className="MemberList">
             <div className="sw-header-wrapper">
                 <div className="sw-label-wrapper">
-                    <div className="sw-member-list-label"><I18n text={"our_member"}/>.</div>
-                    <div className="sw-member-list-sub-label"><I18n text={"sw_about_us_sologan"}/></div>
+                    <div className="sw-main-label"><I18n text={"our_member"}/>.</div>
+                    <div className="sw-sub-label"><I18n text={"sw_about_us_sologan"}/></div>
+                    <span className="sw-divider"></span>
                 </div>
             </div>
             <Founder {...founder[0]}/> 
 
-            <div className="sw-advisor-label">
-                <div className="main-label">
+            <div className="sw-label-wrapper">
+                <div className="sw-main-label">
                     <I18n text="our_advisors_title"/>
                 </div>
-                <div className="sub-label">
+                <div className="sw-sub-label">
                     S-world thanks all of you
                 </div>
+                <span className="sw-divider"></span>
             </div>
 
             <div className="sw-second-list">

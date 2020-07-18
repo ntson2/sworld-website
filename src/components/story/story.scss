@@ -5,34 +5,7 @@
 .Story {
     color: $primary-color;
     font-family: $primary-font;
-
-    .sw-label-wrapper {
-        margin: 6rem auto;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        
-        .sw-main-label {
-            position: relative;
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 4rem;
-            color: #000000;
-            letter-spacing: -.1rem;
-            margin-bottom: .5rem;
-        }
-
-        .sw-sub-label {
-            font-size: 1.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 2rem;
-            letter-spacing: -.1rem;
-        }
-    }
+    margin: 10rem 0;
 
     .sw-story-container {
         display: flex;
@@ -127,6 +100,16 @@
     
             .sw-story-quotes {
                 width: 45%;
+            }
+        }
+    }
+}
+
+@include breakpoints (1199px) {
+    .Story {
+        .sw-label-wrapper {
+            .sw-divider {
+                width: 10%;
             }
         }
     }

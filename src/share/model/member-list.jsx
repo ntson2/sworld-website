@@ -74,7 +74,7 @@ const Listmember = [
     },
     {
         _id: 6,
-        _name: `Don Le`,
+        _name: `DON LE`,
         _img: `${bucketUrl}donLe.JPG`,
         _imgAlt: `Don Le`,
         _carier: 'sw_don_le_carier',

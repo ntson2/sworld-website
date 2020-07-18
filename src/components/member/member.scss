@@ -2,17 +2,13 @@
 @import '../../../public/scss/mixins.scss';
 
 .Member {
-    width: calc(100%);
-    margin: 0 10px;
+    width: 300px;
+    margin: 0 auto;
     text-align: center;
-    -webkit-box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
-    box-shadow: 1px 1px 1px rgba(33, 54, 61, 0.15);
     position: relative;
     height: 40rem;
     margin-bottom: 3rem;
     color: $white;
-    display: inline-block;
-    overflow: hidden;
 
     img {
         width: 100%;
@@ -25,14 +21,13 @@
         background: #191919;
         position: absolute;
         left: 0;
-        top: 0;
+        bottom: 0;
         width: 100%;
-        height: 100%;
+        height: 30%;
         opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 3rem;
 
         -webkit-transform: scale(0);
         -ms-transform: scale(0);
@@ -42,7 +37,7 @@
         transition: all 0.5s ease-out;
 
         .sw-member-social {
-            padding-top: 25px;
+            padding-top: 1rem;
             position: relative;
             z-index: 0;
     
@@ -84,26 +79,26 @@
     }
 }
 
-@include breakpoints (small) {
-    .Member {
-        width: calc(100% - 25px);
-    }
-}
+// @include breakpoints (small) {
+//     .Member {
+//         width: calc(100% - 25px);
+//     }
+// }
 
-@include breakpoints (medium) {
-    .Member {
-        width: calc(50% - 25px);
-    }
-}
+// @include breakpoints (medium) {
+//     .Member {
+//         width: calc(50% - 25px);
+//     }
+// }
 
-@include breakpoints (large) {
-    .Member {
-        width: calc(33% - 25px);
-    }
-}
+// @include breakpoints (large) {
+//     .Member {
+//         width: calc(33% - 25px);
+//     }
+// }
 
-@include breakpoints (x-large) {
-    .Member {
-        width: calc(25% - 25px);
-    }
-}
+// @include breakpoints (x-large) {
+//     .Member {
+//         width: calc(25% - 25px);
+//     }
+// }

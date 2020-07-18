@@ -20,12 +20,13 @@ const Service = (props) => {
                 <div className="sw-service-img">
                     <img src={listData._img} alt={<I18n text={listData._name}/>}/>
                 </div>
-                <div className="sw-service-overlay"></div>
-                <div className="sw-service-content-overlay">
-                    <div className="sw-service-name"><I18n text={listData._name}/></div>
-                    {listData._decs.map(dec => <div key={dec._id}  className="sw-service-decs"><I18n text={dec._text}/></div>)}
+                <div className="sw-service-overlay">
+                    <div className="sw-service-content-overlay">
+                        <div className="sw-service-name"><I18n text={listData._name}/></div>
+                        {listData._decs.map(dec => <div key={dec._id}  className="sw-service-decs"><I18n text={dec._text}/></div>)}
+                    </div>
                 </div>
-                <div className="sw-service-footer-overlay"></div>
+                <div className="sw-service-footer-overlay"><I18n text={listData._name}/></div>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {FaArrowCircleUp} from 'react-icons/fa';
+import {FaArrowUp, FaGratipay} from 'react-icons/fa';
 import * as _ from 'lodash';
 
 
@@ -64,18 +64,19 @@ const ScrollTopArrow = () => {
       width: 35,
       display: showScroll ? 'flex' : 'none',
       position: 'fixed',
-      bottom: 10,
-      right: 10,
-      opacity: 0.9,
+      bottom: 20,
+      right: 20,
+      opacity: 0.4,
       zIndex: 10,
-      color: '#6699ff',
+      background: 'gray',
+      padding: 6,
       '&:hover': {
-          opacity: 1
+        opacity: 1
       }
   }
 
   return (
-    <FaArrowCircleUp
+    <FaArrowUp
         onClick={scrollTop}
         style={scrollBtnStyleinline}
     />

@@ -1,6 +1,6 @@
 const bucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/Clients/';
 const greyBucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/GreyClients/';
-const transparentBucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/TransparentClients/';
+const transparentBucketUrl = 'https://sworldmedia-website.s3.amazonaws.com/image/ClientsTransparent/';
 
 const Clients = [
     {

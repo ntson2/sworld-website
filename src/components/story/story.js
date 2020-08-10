@@ -70,7 +70,7 @@ const Story = () => {
                     <div className="quotes">
                         <div className="sw-quotes-logo-top" style={topQuotesStyle}></div>
                         <div className="sw-quotes-text">
-                            <I18n text={"sw_our_story"} numWord={600}></I18n> ....
+                            <I18n text={"sw_our_story"} numWord={600}></I18n>
                         </div>
                         <div className="sw-quotes-logo-bttom" style={bottomQuotesStyle}></div>
                     </div>

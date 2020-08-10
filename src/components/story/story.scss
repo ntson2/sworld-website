@@ -67,10 +67,10 @@
 
             .quotes {
                 position: relative;
-                font-size: 1.8rem;
-                color: #000000;
+                font-size: 1.5rem;
+                color: $primary-color;
                 font-weight: 400;
-                font-family: 'Josefin Sans', sans-serif;
+                font-family: $primary-font;
                 white-space: pre-line;
 
                 .sw-quotes-logo-top {

@@ -15,7 +15,7 @@ const Listmember = [
     {
         _id: 1,
         _name: `GS. TRẦN NGỌC PHÚC `,
-        _img: `${bucketUrl}tranNgocPhuc.jpg`,
+        _img: `${bucketUrl}tranNgocPhucResize.jpg`,
         _imgAlt: `Gs. Tran Ngoc Phuc`,
         _carier: 'sw_gs_phuc_carier',
         _role: `sw_inspirational_advisor`,
@@ -39,7 +39,7 @@ const Listmember = [
     {
         _id: 3,
         _name: `FREDDY GENTIZON`,
-        _img: `${bucketUrl}mrMcFreddy.jpg`,
+        _img: `${bucketUrl}mrMcFreddyResize.jpg`,
         _imgAlt: `Mr Mc Freddy`,
         _role: `sw_communication_advisor`,
         _carier: 'sw_freddy_carrier',

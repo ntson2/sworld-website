@@ -1,43 +1,29 @@
 @import '../../../public/scss/variable';
+@import '../../../public/scss/mixins';
 
 .Footer {
     width: 100%;
     font-family: $primary-font;
     color: $primary-color;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #2f2a2e;
 
     .sw-footer-background-img {
         width: 100%;
         height: auto;
     }
 
-    .sw-footer-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        height: 100%;
-        width: 100%;
-        padding-bottom: 2rem;
-    
-        .sw-contact {
-            width: 70%;
-            padding: 1rem;
-            font-size: 1.4rem;
-            margin-left: 2rem;
-        }
-    
+    .sw-footer-end {
         .sw-social {
-            width: 30%;
-            padding: 1rem;
-            text-align: right;
+            width: 100%;
+            margin-top: 1rem;
+            text-align: center;
             a {
                 background-color: rgba(173,173,173,0);
-                color: $black;
-                font-size: 10px;
-                padding: .4rem;
+                color: $primary-color;
+                font-size: 15px;
+                padding: 1rem;
                 margin: .4rem;
                 border-style: solid;
                 border-width: 2px 2px 2px 2px;
@@ -53,13 +39,75 @@
                 }
             }
         }
-        .fa {
-            padding: 20px;
-            font-size: 100px;
-            width: 20px;
+
+        .sw-copyright {
             text-align: center;
-            text-decoration: none;
-            margin: 1px 3px;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .sw-footer-overlay {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0 1.5rem 0;
+
+        .sw-infor-wrapper {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+
+            .sw-infor-header {
+                font-size: 3.2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 2.5rem;
+                margin-bottom: 2rem;
+                color: $primary-color;
+                letter-spacing: 2px;
+            }
+
+            .sw-infor-content {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                color: $primary-color;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 100px;
+        width: 36px;
+        text-align: center;
+        text-decoration: none;
+        margin: 1px 3px;
+    }
+}
+
+@include breakpoints (1199px) {
+    .Footer {
+        position: relative;
+        .sw-footer-overlay {
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 20%;
+            width: 100%;
+            
+
+            .sw-infor-wrapper {
+                max-width: 350px;
+            }
+
+            .sw-footer-end {
+                .sw-social {
+                    margin: 0;
+                }
+            }
         }
     }
 }

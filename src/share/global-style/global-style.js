@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
         letter-spacing:normal;
         letter-spacing:initial;
         font-weight:400;
+
+
     }
 
     @media (min-width: 40em) {
@@ -43,8 +45,14 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         padding:0;
         background: #ffffff;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
-  
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+      
     *,
     *::before,
     *::after{
